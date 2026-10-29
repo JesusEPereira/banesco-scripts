@@ -1,0 +1,22 @@
+{
+  "solicitud": {
+    "host": "192.168.1.100",
+    "usuario": "USR_OPERADOR",
+    "password": "[PROTEGIDO_CYBERARK]",
+    "tipo_operacion": "DML",
+    "comando_sql": "UPDATE PRODLIB.PARAMETROS SET VALOR = 'ACTIVO' WHERE CODIGO = 'CFG_MFA'",
+    "solicitante": "operador_sistema",
+    "aprobado_por": "jefe_infraestructura",
+    "aprobado": true
+  },
+  "respuesta": {
+    "status": 200,
+    "mensaje": "Operación DML ejecutada exitosamente en IBM i",
+    "tipo_operacion": "DML",
+    "host": "192.168.1.100",
+    "sql_ejecutado": "UPDATE PRODLIB.PARAMETROS SET VALOR = 'ACTIVO' WHERE CODIGO = 'CFG_MFA'",
+    "filas_afectadas": 1,
+    "auditoria_id": "AUD-20260911074643-C3D4",
+    "aprobado_por": "jefe_infraestructura"
+  }
+}

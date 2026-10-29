@@ -1,0 +1,6 @@
+{
+  "name": "Control de Gestión y Rendimiento de Equipo",
+  "description": "Dashboard interactivo para seguimiento de rendimiento de equipo, KPIs operativos, control de carga de trabajo y matriz de tareas con filtros avanzados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

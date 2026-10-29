@@ -1,0 +1,41 @@
+{
+  "oracle": {
+    "connectionName": "fucsion.intra.banesco.com",
+    "host": "sdb8023.intra.banesco.com",
+    "port": 1521,
+    "sid": "rrhh",
+    "user": "actived",
+    "tableActive": "actived",
+    "tableEgress": "actived_ret"
+  },
+  "matrices": {
+    "defaultPath": "\\\\intra.banesco.com\\datos\\Central\\Gerencias\\Vp Ejec Prev Perdidas y Cont Neg\\Vp Cont del Negocio\\Gcia Div Gesti*n y Control\\VP PREVENCION\\AdminSegTI\\Prueba2026",
+    "rootPath": "\\\\intra.banesco.com\\datos\\Central\\Gerencias\\Vp Ejec Prev Perdidas y Cont Neg\\Vp Cont del Negocio\\Gcia Div Gesti*n y Control\\VP PREVENCION\\AdminSegTI",
+    "backupSubfolder": "_Versiones_Historicas",
+    "usersSheetName": "Usuarios",
+    "matrixSheetName": "Matriz",
+    "headerRow": 11,
+    "dataStartRow": 12
+  },
+  "outputs": {
+    "reportsDir": "D:\\WKESPEREIRA\\D\\Scripts\\.agents\\skills\\skill-matriz-roles-perfiles\\reports",
+    "logsDir": "D:\\WKESPEREIRA\\D\\Scripts\\.agents\\skills\\skill-matriz-roles-perfiles\\logs",
+    "auditLogFile": "D:\\WKESPEREIRA\\D\\Scripts\\.agents\\skills\\skill-matriz-roles-perfiles\\logs\\matriz_audit.jsonl"
+  },
+  "validation": {
+    "mode": "ActiveDirectoryOU",
+    "targetOU": "OU=Usuarios,DC=intra,DC=banesco,DC=com",
+    "serviceAccountOU": "OU=Cuentas de Servicios,DC=intra,DC=banesco,DC=com",
+    "serviceAccountPrefix": "^(?i)svc_?",
+    "highlightColor": "Red",
+    "highlightInteriorColor": 13551615,
+    "highlightFontColor": 393372,
+    "applicationUsers": [
+      {
+        "matrixPattern": "(?i)goanywhere",
+        "users": ["Project Executor", "Gawuser"],
+        "description": "Usuario de Aplicacion (Activo en GoAnywhere)"
+      }
+    ]
+  }
+}

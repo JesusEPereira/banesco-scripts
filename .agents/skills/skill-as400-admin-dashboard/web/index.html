@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banesco | Portal de Administración de Seguridad IBM i AS400</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Capa de Fondo y Resplandor Ambiental -->
+    <div class="ambient-glow glow-top"></div>
+    <div class="ambient-glow glow-bottom"></div>
+
+    <!-- ========================================================================= -->
+    <!-- 1. VISTA DE AUTENTICACIÓN LDAPS (636 TLS) CORPORATIVA BANESCO             -->
+    <!-- ========================================================================= -->
+    <section id="loginSection" class="auth-wrapper">
+        <div class="auth-card">
+            <!-- Icono Escudo Verde con Checkmark -->
+            <div class="auth-shield-container">
+                <div class="shield-badge">
+                    <svg class="shield-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981"/>
+                        <path d="M9 12l2 2 4-4" stroke="#10b981" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Títulos e Identidad de Marca -->
+            <div class="auth-header">
+                <h1 class="brand-title">Banesco</h1>
+                <div class="brand-subtitle">ADMINISTRACIÓN DE SEGURIDAD</div>
+                <p class="auth-description">
+                    Ingrese sus credenciales corporativas de Active Directory para autenticar en la plataforma.
+                </p>
+            </div>
+
+            <!-- Banner Alerta de Expiración de Sesión (15 minutos) -->
+            <div id="sessionExpiredAlert" class="alert-box alert-expired hidden">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-text">
+                    <strong>Su sesión ha expirado por inactividad (15 minutos).</strong> Por favor inicie sesión nuevamente.
+                </div>
+            </div>
+
+            <!-- Banner Alerta de Error de Credenciales en Active Directory -->
+            <div id="loginErrorAlert" class="alert-box alert-error hidden">
+                <div class="alert-icon">⛔</div>
+                <div class="alert-text" id="loginErrorText">
+                    Credenciales inválidas en Active Directory
+                </div>
+            </div>
+
+            <!-- Formulario de Login LDAPS -->
+            <form id="loginForm" class="auth-form" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="authUsername" class="form-label">Usuario Corporativo</label>
+                    <div class="input-icon-group">
+                        <span class="input-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </span>
+                        <input type="text" id="authUsername" class="form-input" placeholder="Ej. jespereira o usuario@intra.banesco.com" required autocomplete="username">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="authPassword" class="form-label">Contraseña de Red</label>
+                    <div class="input-icon-group">
+                        <span class="input-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </span>
+                        <input type="password" id="authPassword" class="form-input" placeholder="••••••••••••" required autocomplete="current-password">
+                        <button type="button" class="btn-toggle-pass" id="btnToggleAuthPass" title="Ver contraseña">👁️</button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="chkRememberUser" checked>
+                        <span>Recordar usuario en este navegador</span>
+                    </label>
+                </div>
+
+                <button type="submit" id="btnLogin" class="btn-primary btn-auth">
+                    <span class="btn-text">Iniciar Sesión Segura</span>
+                    <span class="spinner hidden" id="loginSpinner"></span>
+                </button>
+            </form>
+
+            <!-- Pie de Tarjeta LDAPS -->
+            <div class="auth-footer">
+                <span class="secure-badge">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#10b981" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    <span>LDAPS 636 TLS &nbsp;|&nbsp; Active Directory Banesco</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 2. VISTA PRINCIPAL: DASHBOARD DE ADMINISTRACIÓN AS400 (LPAR 10.137.0.138)  -->
+    <!-- ========================================================================= -->
+    <section id="dashboardSection" class="dashboard-wrapper hidden">
+        <!-- Barra de Navegación Superior -->
+        <header class="app-header">
+            <div class="header-left">
+                <div class="header-brand">
+                    <span class="logo-shield">🛡️</span>
+                    <div class="brand-names">
+                        <span class="app-title">Portal Interno IBM i Gcia. Administracion Seguridad</span>
+                        <span class="app-subtitle">Servidor de Desarrollo: LPAR 10.137.0.138 (IBM i v7.5)</span>
+                    </div>
+                </div>
+                <div class="host-badge">
+                    <span class="status-dot dot-online"></span>
+                    <span class="host-name">10.137.0.138 (v7.5)</span>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <!-- Píldora del Gerente y Estructura Orgánica del Área (Según imagen de referencia) -->
+                <div class="ad-organic-wrapper" id="adOrganicWrapper">
+                    <div class="manager-header-pill" id="managerHeaderPill">
+                        <div class="mgr-pill-avatar" id="mgrHeaderAvatar">AO</div>
+                        <div class="mgr-pill-info">
+                            <span class="mgr-pill-name" id="mgrHeaderName">Alexis Omar Guevara Moncada</span>
+                            <span class="mgr-pill-title" id="mgrHeaderTitle">Gte. de Admin. de Seguridad</span>
+                        </div>
+                        <div class="mgr-pill-phone" title="Extensión Telefónica">
+                            <span class="phone-icon">📞</span>
+                            <span class="phone-ext" id="mgrHeaderExt">7078</span>
+                        </div>
+                        <button class="btn-supervised-dropdown" id="btnSupervisedDropdown" type="button" aria-expanded="false" title="Ver Estructura Orgánica del Área">
+                            <span class="sup-icon">👥</span>
+                            <span class="sup-label"><span id="supCountHeader">10</span> Supervisados</span>
+                            <span class="sup-arrow">▾</span>
+                        </button>
+                    </div>
+
+                    <!-- Menú Desplegable Estructura Orgánica del Área -->
+                    <div class="ad-organic-dropdown hidden" id="adOrganicDropdown">
+                        <div class="organic-dropdown-header">
+                            <div class="organic-header-left">
+                                <div class="organic-shield-icon">🛡️</div>
+                                <div class="organic-header-titles">
+                                    <h3 class="organic-title">Estructura Orgánica del Área</h3>
+                                    <span class="organic-subtitle">Gcia. de Administración de Seguridad • Banesco</span>
+                                </div>
+                            </div>
+                            <div class="organic-count-badge">
+                                <span id="organicColabCount">10</span> COLABORADORES
+                            </div>
+                        </div>
+
+                        <!-- Lista de Tarjetas de Colaboradores Supervisados (Sin botón de consultar) -->
+                        <div class="organic-colab-list" id="organicColabList">
+                            <div class="ad-loading-text">Cargando colaboradores de la Gerencia...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contador de Inactividad de Sesión (15 min) -->
+                <div class="session-timer-pill" id="sessionTimerPill" title="Tiempo restante antes del cierre automático por inactividad">
+                    <span class="timer-icon">⏱️</span>
+                    <span>Expira en: <strong id="timerCountdown">15:00</strong></span>
+                </div>
+
+                <!-- Perfil del Operador -->
+                <div class="user-profile-pill">
+                    <div class="user-avatar" id="userAvatar">JP</div>
+                    <div class="user-info-text">
+                        <span class="user-name" id="displayUserName">jespereira</span>
+                        <span class="user-role">Operador de Seguridad</span>
+                    </div>
+                </div>
+
+                <button id="btnLogout" class="btn-logout" title="Cerrar sesión">
+                    <span>Salir</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Barra de Pestañas de Navegación -->
+        <nav class="app-tabs">
+            <button class="tab-btn active" data-tab="tabUserSearch" id="btnTabSearch">
+                <span>🔍 Buscador Maestro (QSYS2.USER_INFO)</span>
+            </button>
+            <button class="tab-btn" data-tab="tabChangePassword" id="btnTabPwd">
+                <span>🔑 Cambio de Contraseñas</span>
+            </button>
+            <button class="tab-btn" data-tab="tabPermissions" id="btnTabPerm">
+                <span>🛡️ Permisología de Objetos</span>
+            </button>
+            <button class="tab-btn" data-tab="tabAudit" id="btnTabAudit">
+                <span>📜 Trazabilidad de Auditoría</span>
+            </button>
+        </nav>
+
+        <!-- Contenido Principal del Dashboard -->
+        <main class="dashboard-content">
+
+            <!-- ----------------------------------------------------------------- -->
+            <!-- PESTAÑA 1: BUSCADOR MAESTRO DE USUARIOS (QSYS2.USER_INFO)         -->
+            <!-- ----------------------------------------------------------------- -->
+            <div id="tabUserSearch" class="tab-pane active">
+                <!-- Barra del Buscador Maestro -->
+                <div class="search-hero-card">
+                    <div class="search-hero-header">
+                        <div>
+                            <h2 class="section-title">Buscador Maestro de Usuarios en IBM i</h2>
+                            <p class="section-desc">Consulta en tiempo real sobre el IBM i en 10.137.0.138.</p>
+                        </div>
+                    </div>
+
+                    <!-- Barra de Conexión y Credenciales de Operador IBM i para Consultas en Línea -->
+                    <div class="as400-live-conn-bar" id="as400LiveConnBar">
+                        <div class="live-conn-info">
+                            <span class="live-pulse-dot dot-waiting" id="as400LiveDot"></span>
+                            <div class="live-conn-labels">
+                                <span class="live-conn-title">Conexión Directa DB2 (10.137.0.138 • QSYS2.USER_INFO)</span>
+                                <span class="live-conn-status" id="as400LiveStatus">Ingrese usuario y contraseña de operador AS400 para consultar en línea</span>
+                            </div>
+                        </div>
+
+                        <div class="live-conn-controls">
+                            <div class="live-input-item">
+                                <label for="as400SearchUser">Usuario AS400 <span class="req-star">*</span></label>
+                                <div class="mini-input-box">
+                                    <span class="mini-input-icon">👤</span>
+                                    <input type="text" id="as400SearchUser" placeholder="eje. Ban" autocomplete="off" class="live-field-input">
+                                </div>
+                            </div>
+
+                            <div class="live-input-item">
+                                <label for="as400SearchPass">Contraseña AS400 <span class="req-star">*</span></label>
+                                <div class="mini-input-box">
+                                    <span class="mini-input-icon">🔑</span>
+                                    <input type="password" id="as400SearchPass" placeholder="••••••••" autocomplete="current-password" class="live-field-input">
+                                    <button type="button" id="btnToggleSearchPass" class="btn-mini-eye" title="Mostrar/Ocultar contraseña">👁️</button>
+                                </div>
+                            </div>
+
+                            <button type="button" id="btnSaveSearchCreds" class="btn-save-session" title="Guardar credenciales para esta sesión activa (15 min)">
+                                <span>💾 Recordar en Sesión</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="search-bar-row">
+                        <div class="search-input-wrap">
+                            <span class="search-icon">🔍</span>
+                            <input type="text" id="masterSearchInput" class="search-input" placeholder="Ingrese Usuario (ej. BANCSOA064, BANASIA030, BAN1740*)..." autocomplete="off">
+                            <button type="button" class="btn-clear-search hidden" id="btnClearSearch">×</button>
+                        </div>
+
+                        <div class="filter-dropdown-wrap">
+                            <label for="filterStatus" class="filter-label">Estado:</label>
+                            <select id="filterStatus" class="filter-select">
+                                <option value="*ALL">Todos los Estados</option>
+                                <option value="*ENABLED">Solo Habilitados (*ENABLED)</option>
+                                <option value="*DISABLED">Solo Deshabilitados (*DISABLED)</option>
+                            </select>
+                        </div>
+
+                        <button id="btnExecuteSearch" class="btn-primary btn-search">
+                            <span>Consultar</span>
+                            <span class="spinner hidden" id="searchSpinner"></span>
+                        </button>
+                    </div>
+
+                    <!-- Tags de Búsqueda Rápida -->
+                    <div class="quick-tags">
+                        <span class="tags-label">Búsquedas Frecuentes:</span>
+                        <button class="quick-tag-chip" data-user="BANCSOA064">BANCSOA064</button>
+                        <button class="quick-tag-chip" data-user="BANCSOA%">BANCSOA%</button>
+                        <button class="quick-tag-chip" data-user="BANASIA030">BANASIA030</button>
+                        <button class="quick-tag-chip" data-user="BANASIA%">BANASIA%</button>
+                        <button class="quick-tag-chip" data-user="BANASIA029">BANASIA029</button>
+                        <button class="quick-tag-chip" data-user="BANASIA034">BANASIA034</button>
+                        <button class="quick-tag-chip" data-user="JESPEREIRA">JESPEREIRA</button>
+                        <button class="quick-tag-chip" data-user="OPER%">OPER%</button>
+                        <button class="quick-tag-chip" data-user="BAN1740%">BAN1740%</button>
+                    </div>
+                </div>
+
+                <!-- Métricas Rápidas -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon metric-blue">👥</div>
+                        <div class="metric-body">
+                            <span class="metric-value" id="kpiTotalUsers">0</span>
+                            <span class="metric-label">Usuarios Retornados</span>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon metric-green">✅</div>
+                        <div class="metric-body">
+                            <span class="metric-value" id="kpiEnabledUsers">0</span>
+                            <span class="metric-label">Perfiles Habilitados (*ENABLED)</span>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon metric-red">⛔</div>
+                        <div class="metric-body">
+                            <span class="metric-value" id="kpiDisabledUsers">0</span>
+                            <span class="metric-label">Perfiles Deshabilitados (*DISABLED)</span>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon metric-amber">⚠️</div>
+                        <div class="metric-body">
+                            <span class="metric-value" id="kpiBadSignons">0</span>
+                            <span class="metric-label">Intentos Fallidos Acumulados</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla de Resultados de QSYS2.USER_INFO -->
+                <div class="table-card">
+                    <div class="table-header-bar">
+                        <div class="table-title-group">
+                            <h3 class="table-title">Perfiles Encontrados</h3>
+                            <span class="table-mode-badge" id="tableModeBadge"></span>
+                        </div>
+                        <span class="table-count" id="tableRecordCount">0 registros</span>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="data-table" id="usersTable">
+                            <thead>
+                                <tr>
+                                    <th>Authorization Name</th>
+                                    <th>Status</th>
+                                    <th>Previous Signon</th>
+                                    <th>Bad Signons</th>
+                                    <th>Password Change Date</th>
+                                    <th>Special Authorities</th>
+                                    <th>Group Profile</th>
+                                    <th class="text-right">Acciones Rápidas</th>
+                                </tr>
+                            </thead>
+                            <tbody id="usersTableBody">
+                                <tr>
+                                    <td colspan="8" class="empty-table-msg">
+                                        Ingrese un usuario o patrón en el buscador maestro para consultar en <code>QSYS2.USER_INFO</code>.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ----------------------------------------------------------------- -->
+            <!-- PESTAÑA 2: CAMBIO DE CONTRASEÑAS (CHGUSRPRF)                      -->
+            <!-- ----------------------------------------------------------------- -->
+            <div id="tabChangePassword" class="tab-pane">
+                <div class="panel-card-centered">
+                    <div class="panel-header">
+                        <div class="panel-icon-wrap icon-amber">🔑</div>
+                        <div>
+                            <h2 class="panel-title">Módulo de Cambio de Contraseñas IBM i</h2>
+                            <p class="panel-desc">Ejecuta el cambio seguro de contraseñas mediante <code>CHGUSRPRF</code> con registro en <code>as400_password_audit.jsonl</code>.</p>
+                        </div>
+                    </div>
+
+                    <form id="pwdChangeForm" class="panel-form" onsubmit="return false;">
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label for="pwdTargetUser" class="form-label">Usuario Objetivo (AS400) *</label>
+                                <input type="text" id="pwdTargetUser" class="form-input" placeholder="Ej. BANASIA029" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pwdForceExp" class="form-label">Forzar Expiración (PWDEXP) *</label>
+                                <select id="pwdForceExp" class="form-select">
+                                    <option value="*NO">No expirar (*NO)</option>
+                                    <option value="*YES">Forzar cambio en primer inicio (*YES)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pwdNewPassword" class="form-label">Nueva Contraseña para el Usuario *</label>
+                            <div class="input-icon-group">
+                                <input type="password" id="pwdNewPassword" class="form-input" placeholder="Ingrese nueva contraseña segura" required>
+                                <button type="button" class="btn-toggle-pass" id="btnToggleNewPass">👁️</button>
+                            </div>
+                        </div>
+
+                        <div class="form-divider">
+                            <span>Credenciales de Administrador AS400 (*SECADM)</span>
+                        </div>
+
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label for="pwdAdminUser" class="form-label">Usuario Admin AS400 *</label>
+                                <input type="text" id="pwdAdminUser" class="form-input" placeholder="Ej. Ban" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pwdAdminPass" class="form-label">Contraseña Admin AS400 *</label>
+                                <input type="password" id="pwdAdminPass" class="form-input" placeholder="••••••••" required>
+                            </div>
+                        </div>
+
+                        <div class="options-box">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="pwdDryRun" checked>
+                                <span><strong>Modo Simulación (Dry-Run)</strong>: Valida parámetros y sintaxis sin alterar el AS400 real.</span>
+                            </label>
+                        </div>
+
+                        <div class="panel-actions">
+                            <button type="button" class="btn-secondary" id="btnBackToSearchFromPwd">← Volver al Buscador Maestro</button>
+                            <button type="button" class="btn-secondary" id="btnResetPwdForm">Limpiar</button>
+                            <button type="button" class="btn-primary" id="btnPreparePwdHITL">
+                                <span>Aprobar y Ejecutar Cambio</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ----------------------------------------------------------------- -->
+            <!-- PESTAÑA 3: GESTIÓN DE PERMISOS DE OBJETOS (GRTOBJAUT / RVKOBJAUT) -->
+            <!-- ----------------------------------------------------------------- -->
+            <div id="tabPermissions" class="tab-pane">
+                <div class="panel-card-centered">
+                    <div class="panel-header">
+                        <div class="panel-icon-wrap icon-purple">🛡️</div>
+                        <div>
+                            <h2 class="panel-title">Módulo de Permisología de Objetos IBM i</h2>
+                            <p class="panel-desc">Otorga o revoca autorizaciones solicitando explícitamente el <strong>Objeto</strong> y la <strong>Librería</strong>.</p>
+                        </div>
+                    </div>
+
+                    <form id="permForm" class="panel-form" onsubmit="return false;">
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label for="permLibrary" class="form-label">Librería (Biblioteca) *</label>
+                                <input type="text" id="permLibrary" class="form-input" placeholder="Ej. SIIF0910 o SEGDATLIB" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="permObject" class="form-label">Nombre del Objeto *</label>
+                                <input type="text" id="permObject" class="form-input" placeholder="Ej. CUMAD, TLMST o TEMP1740C8" required>
+                            </div>
+                        </div>
+
+                        <div class="form-grid-3">
+                            <div class="form-group">
+                                <label for="permObjType" class="form-label">Tipo de Objeto *</label>
+                                <select id="permObjType" class="form-select">
+                                    <option value="*FILE">*FILE (Archivo / Tabla)</option>
+                                    <option value="*PGM">*PGM (Programa)</option>
+                                    <option value="*SRVPGM">*SRVPGM (Programa de Servicio)</option>
+                                    <option value="*LIB">*LIB (Biblioteca)</option>
+                                    <option value="*DTAARA">*DTAARA (Data Area)</option>
+                                    <option value="*OUTQ">*OUTQ (Cola de Salida)</option>
+                                    <option value="*JOBD">*JOBD (Descripción de Trabajo)</option>
+                                    <option value="*CMD">*CMD (Comando CL)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="permAction" class="form-label">Acción *</label>
+                                <select id="permAction" class="form-select">
+                                    <option value="GRANT">GRANT (Otorgar / GRTOBJAUT)</option>
+                                    <option value="REVOKE">REVOKE (Revocar / RVKOBJAUT)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="permAuthority" class="form-label">Nivel de Autoridad *</label>
+                                <select id="permAuthority" class="form-select">
+                                    <option value="*CHANGE">*CHANGE (Cambio / Modificación)</option>
+                                    <option value="*USE">*USE (Uso / Solo Lectura)</option>
+                                    <option value="*ALL">*ALL (Control Total)</option>
+                                    <option value="*EXCLUDE">*EXCLUDE (Excluir Acceso)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="permAspDev" class="form-label">Dispositivo de ASP / IASP (Opcional)</label>
+                            <input type="text" id="permAspDev" class="form-input" placeholder="Ej. IASP01 (dejar vacío si *SYSBAS)">
+                        </div>
+
+                        <div class="form-divider">
+                            <span>Credenciales de Administrador AS400 (*OBJMGT / Owner)</span>
+                        </div>
+
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label for="permAdminUser" class="form-label">Usuario Admin AS400 *</label>
+                                <input type="text" id="permAdminUser" class="form-input" placeholder="Ej. Ban" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="permAdminPass" class="form-label">Contraseña Admin AS400 *</label>
+                                <input type="password" id="permAdminPass" class="form-input" placeholder="••••••••" required>
+                            </div>
+                        </div>
+
+                        <div class="options-box">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="permDryRun" checked>
+                                <span><strong>Modo Simulación (Dry-Run)</strong>: Genera y valida la sentencia sin aplicarla en AS400.</span>
+                            </label>
+                        </div>
+
+                        <div class="panel-actions">
+                            <button type="button" class="btn-secondary" id="btnBackToSearchFromPerm">← Volver al Buscador Maestro</button>
+                            <button type="button" class="btn-secondary" id="btnResetPermForm">Limpiar</button>
+                            <button type="button" class="btn-primary" id="btnPreparePermHITL">
+                                <span>Aprobar y Ejecutar Permiso</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ----------------------------------------------------------------- -->
+            <!-- PESTAÑA 4: TRAZABILIDAD Y AUDITORÍA SEGREGADA                      -->
+            <!-- ----------------------------------------------------------------- -->
+            <div id="tabAudit" class="tab-pane">
+                <div class="table-card">
+                    <div class="audit-toolbar">
+                        <div class="audit-selector-tabs">
+                            <button class="audit-subtab-btn active" data-log="passwords" id="btnLogPwd">
+                                🔑 Auditoría de Contraseñas (as400_password_audit.jsonl)
+                            </button>
+                            <button class="audit-subtab-btn" data-log="permissions" id="btnLogPerm">
+                                🛡️ Auditoría de Permisos (as400_permissions_audit.jsonl)
+                            </button>
+                        </div>
+                        <button class="btn-secondary btn-sm" id="btnRefreshLogs">🔄 Actualizar Feed</button>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="data-table" id="auditTable">
+                            <thead>
+                                <tr>
+                                    <th>Audit ID</th>
+                                    <th>Fecha / Hora</th>
+                                    <th>Operación</th>
+                                    <th>Detalle / Destino</th>
+                                    <th>Solicitante</th>
+                                    <th>Aprobador</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody id="auditTableBody">
+                                <tr>
+                                    <td colspan="7" class="empty-table-msg">Cargando registros de auditoría...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 3. MODAL: FICHA HUMAN-IN-THE-LOOP (HITL) PARA APROBACIÓN OBLIGATORIA      -->
+    <!-- ========================================================================= -->
+    <div id="hitlModal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-warning-badge">⚠️ HITL APPROVAL</div>
+                <h3 class="modal-title">Confirmación Requerida para Transacción en AS400</h3>
+                <p class="modal-desc">Verifique los detalles exactos del comando antes de autorizar su ejecución en la LPAR de desarrollo.</p>
+            </div>
+
+            <div class="hitl-details-box">
+                <div class="hitl-row">
+                    <span class="hitl-label">Servidor Destino:</span>
+                    <span class="hitl-value">10.137.0.138 (IBM i DEV)</span>
+                </div>
+                <div class="hitl-row">
+                    <span class="hitl-label">Tipo de Operación:</span>
+                    <span class="hitl-value" id="hitlOpType">CL_PERMISOS_OBJETO</span>
+                </div>
+                <div class="hitl-row">
+                    <span class="hitl-label">Elemento Afectado:</span>
+                    <span class="hitl-value" id="hitlTargetItem">SIIF0910/CUMAD</span>
+                </div>
+                <div class="hitl-row">
+                    <span class="hitl-label">Operador Solicitante:</span>
+                    <span class="hitl-value" id="hitlRequester">jespereira</span>
+                </div>
+                <div class="hitl-row">
+                    <span class="hitl-label">Modo de Ejecución:</span>
+                    <span class="hitl-value" id="hitlDryRunStatus">Simulación (Dry-Run)</span>
+                </div>
+                <div class="hitl-cmd-box">
+                    <span class="hitl-cmd-label">Comando CL / Sentencia SQL a Ejecutar:</span>
+                    <code id="hitlCommandCode">GRTOBJAUT OBJ(SIIF0910/CUMAD) OBJTYPE(*FILE) USER(*PUBLIC) AUT(*CHANGE)</code>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn-secondary" id="btnCancelHitl">Rechazar / Cancelar</button>
+                <button type="button" class="btn-primary btn-approve" id="btnConfirmHitl">
+                    <span>Autorizar y Ejecutar</span>
+                    <span class="spinner hidden" id="hitlSpinner"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- 4. MODAL: GESTIÓN DE AUTORIZACIONES ESPECIALES (CHGUSRPRF SPCAUT)         -->
+    <!-- ========================================================================= -->
+    <div id="spcautModal" class="modal-overlay hidden">
+        <div class="modal-card spcaut-modal-card">
+            <div class="modal-header">
+                <div class="spcaut-badge">🛡️ IBM i USRPRF SPCAUT</div>
+                <h3 class="modal-title">Modificar Autorizaciones Especiales (CHGUSRPRF)</h3>
+                <p class="modal-desc">Configure o agregue las Autorizaciones Especiales (SPCAUT) dentro del perfil de usuario en <strong>10.137.0.138</strong>.</p>
+            </div>
+
+            <form id="spcautForm" onsubmit="return false;" class="spcaut-form">
+                <div class="form-row-2">
+                    <div class="form-group">
+                        <label class="form-label">Usuario Objetivo (USRPRF)</label>
+                        <input type="text" id="spcautTargetUser" class="form-input form-input-readonly" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Servidor AS400</label>
+                        <input type="text" id="spcautHost" class="form-input form-input-readonly" value="10.137.0.138" readonly>
+                    </div>
+                </div>
+
+                <!-- Selectores de Special Authorities (SPCAUT) -->
+                <div class="spcaut-selector-container">
+                    <div class="spcaut-selector-header">
+                        <span class="selector-title">Seleccionar Autorizaciones Especiales (SPCAUT):</span>
+                        <div class="quick-spcaut-actions">
+                            <button type="button" class="btn-quick-spcaut" id="btnSpcautNone">*NONE (Ninguna)</button>
+                            <button type="button" class="btn-quick-spcaut" id="btnSpcautUsrcls">*USRCLS (Heredar)</button>
+                            <button type="button" class="btn-quick-spcaut" id="btnSpcautAll">*ALL (Todas)</button>
+                        </div>
+                    </div>
+
+                    <div class="spcaut-checkbox-grid">
+                        <label class="spcaut-check-card" for="chk_ALLOBJ">
+                            <input type="checkbox" id="chk_ALLOBJ" value="*ALLOBJ" class="spcaut-checkbox">
+                            <div class="check-card-body">
+                                <span class="check-card-code">*ALLOBJ</span>
+                                <span class="check-card-desc">All Object Authority (Acceso a todos los objetos)</span>
+                            </div>
+                        </label>
+                        <label class="spcaut-check-card" for="chk_SECADM">
+                            <input type="checkbox" id="chk_SECADM" value="*SECADM" class="spcaut-checkbox">
+                            <div class="check-card-body">
+                                <span class="check-card-code">*SECADM</span>
+                                <span class="check-card-desc">Security Administrator (Administración de seguridad)</span>
+                            </div>
+                        </label>
+                        <label class="spcaut-check-card" for="chk_JOBCTL">
+                            <input type="checkbox" id="chk_JOBCTL" value="*JOBCTL" class="spcaut-checkbox">
+                            <div class="check-card-body">
+                                <span class="check-card-code">*JOBCTL</span>
+                                <span class="check-card-desc">Job Control (Control de trabajos y subsistemas)</span>
+                            </div>
+                        </label>
+                        <label class="spcaut-check-card" for="chk_SAVSYS">
+                            <input type="checkbox" id="chk_SAVSYS" value="*SAVSYS" class="spcaut-checkbox">
+                            <div class="check-card-body">
+                                <span class="check-card-code">*SAVSYS</span>
+                                <span class="check-card-desc">Save System (Respaldos y recuperaciones)</span>
+                            </div>
+                        </label>
+                        <label class="spcaut-check-card" for="chk_SPLCTL">
+                            <input type="checkbox" id="chk_SPLCTL" value="*SPLCTL" class="spcaut-checkbox">
+                            <div class="check-card-body">
+                                <span class="check-card-code">*SPLCTL</span>
+                                <span class="check-card-desc">Spool Control (Control de colas de salida y spools)</span>
+                            </div>
+                        </label>
+                        <label class="spcaut-check-card" for="chk_IOSYSCFG">
+                            <input type="checkbox" id="chk_IOSYSCFG" value="*IOSYSCFG" class="spcaut-checkbox">
+                            <div class="check-card-body">
+                                <span class="check-card-code">*IOSYSCFG</span>
+                                <span class="check-card-desc">I/O System Configuration (Comunicaciones y hardware)</span>
+                            </div>
+                        </label>
+                        <label class="spcaut-check-card" for="chk_AUDIT">
+                            <input type="checkbox" id="chk_AUDIT" value="*AUDIT" class="spcaut-checkbox">
+                            <div class="check-card-body">
+                                <span class="check-card-code">*AUDIT</span>
+                                <span class="check-card-desc">Security Auditing (Auditoría de seguridad del sistema)</span>
+                            </div>
+                        </label>
+                        <label class="spcaut-check-card" for="chk_SERVICE">
+                            <input type="checkbox" id="chk_SERVICE" value="*SERVICE" class="spcaut-checkbox">
+                            <div class="check-card-body">
+                                <span class="check-card-code">*SERVICE</span>
+                                <span class="check-card-desc">Service (Mantenimiento y volcado del sistema)</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <!-- Vista previa del comando -->
+                    <div class="spcaut-preview-box">
+                        <span class="preview-label">Comando a generar:</span>
+                        <code id="spcautCmdPreview">CHGUSRPRF USRPRF(...) SPCAUT(*NONE)</code>
+                    </div>
+                </div>
+
+                <!-- Credenciales Admin AS400 para autorización -->
+                <div class="form-row-2 admin-cred-row">
+                    <div class="form-group">
+                        <label for="spcautAdminUser" class="form-label">Usuario Admin AS400 *</label>
+                        <input type="text" id="spcautAdminUser" class="form-input" placeholder="Ej. Ban" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="spcautAdminPass" class="form-label">Contraseña Admin AS400 *</label>
+                        <input type="password" id="spcautAdminPass" class="form-input" placeholder="••••••••" required>
+                    </div>
+                </div>
+
+                <div class="form-options-row">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="spcautDryRun" checked>
+                        <span class="checkmark"></span>
+                        <span class="checkbox-text">Modo Simulación (Dry-Run / Validación previa)</span>
+                    </label>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary" id="btnCancelSpcaut">Cancelar</button>
+                    <button type="button" class="btn-primary" id="btnSubmitSpcaut">
+                        <span>Preparar Aprobación HITL</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contenedor de Alertas Toast Flotantes -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

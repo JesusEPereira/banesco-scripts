@@ -1,0 +1,32 @@
+{
+  "solicitud": {
+    "host": "192.168.1.100",
+    "usuario": "USR_CONSULTA",
+    "password": "[PROTEGIDO_CYBERARK]",
+    "tipo_operacion": "SELECT",
+    "comando_sql": "SELECT LIBNAME, OBJNAME, OBJTYPE, OBJAUT FROM QSYS2.OBJECT_PRIVILEGES WHERE LIBNAME = 'PRODLIB' AND OBJTYPE = '*FILE'",
+    "solicitante": "analista_auditoria"
+  },
+  "respuesta": {
+    "status": 200,
+    "mensaje": "Consulta ejecutada exitosamente en DB2 for i",
+    "tipo_operacion": "SELECT",
+    "host": "192.168.1.100",
+    "filas_retornadas": 2,
+    "data": [
+      {
+        "LIBNAME": "PRODLIB",
+        "OBJNAME": "CUSTOMERPF",
+        "OBJTYPE": "*FILE",
+        "OBJAUT": "*CHANGE"
+      },
+      {
+        "LIBNAME": "PRODLIB",
+        "OBJNAME": "ACCOUNTSPF",
+        "OBJTYPE": "*FILE",
+        "OBJAUT": "*ALL"
+      }
+    ],
+    "auditoria_id": "AUD-20260911074643-A1B2"
+  }
+}

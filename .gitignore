@@ -1,0 +1,31 @@
+# Dependencias y builds
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Archivos de entorno y credenciales
+.env
+*.env.local
+
+# Respaldos y binarios temporales
+*.zip
+*.tar.gz
+*.bak
+
+# Logs y reportes temporales generados
+*.log
+sync_log.txt
+Reporte_Validacion_OU_Temporal_*.csv
+Reportes_Validacion/
+*.tmp
+
+# Archivos de datos / matrices Excel sensibles
+*.xlsx
+*.xlsm
+*.csv
+
+# Archivos temporales de Office
+~$*.xlsx
+~$*.xlsm
+~$*.docx

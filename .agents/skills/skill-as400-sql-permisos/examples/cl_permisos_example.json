@@ -1,0 +1,23 @@
+{
+  "solicitud": {
+    "host": "192.168.1.100",
+    "usuario": "USR_ADMIN_SEC",
+    "password": "[PROTEGIDO_CYBERARK]",
+    "tipo_operacion": "CL_PERMISOS",
+    "comando_sql": "GRTOBJAUT OBJ(BANESCOLIB/CUENTASPF) OBJTYPE(*FILE) USER(USR_AUDIT) AUT(*USE)",
+    "solicitante": "analista_seguridad",
+    "aprobado_por": "oficial_seguridad",
+    "aprobado": true
+  },
+  "respuesta": {
+    "status": 200,
+    "mensaje": "Operación CL_PERMISOS ejecutada exitosamente en IBM i",
+    "tipo_operacion": "CL_PERMISOS",
+    "host": "192.168.1.100",
+    "sql_ejecutado": "CALL QSYS2.QCMDEXC('GRTOBJAUT OBJ(BANESCOLIB/CUENTASPF) OBJTYPE(*FILE) USER(USR_AUDIT) AUT(*USE)', 74)",
+    "filas_afectadas": 1,
+    "data": [],
+    "auditoria_id": "AUD-20260911074643-E5F6",
+    "aprobado_por": "oficial_seguridad"
+  }
+}
