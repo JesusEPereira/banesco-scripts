@@ -60,3 +60,4 @@ if ($LASTEXITCODE -eq 0) {
 } else {
     Write-SyncLog "Fallo el envio a GitHub. Detalle: $pushOutput" "ERROR"
 }
+
