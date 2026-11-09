@@ -1,4 +1,4 @@
-﻿[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8
 
 $DocPath1 = "d:\WKESPEREIRA\D\Scripts\INFORME_TECNICO_PCI_DSS_IBM_i_AIX_REQ_8.3.6.docx"
@@ -51,7 +51,19 @@ try {
     $FooterRange.Collapse(0) # 0 = wdCollapseEnd
     $Doc.Fields.Add($FooterRange, 33) | Out-Null # 33 = wdFieldPage
 
-    # Helper para agregar párrafos
+    # Helpers determinísticos de rango para evitar solapamiento de tablas
+    function Get-DocEndRange {
+        $r = $Doc.Content
+        $r.Collapse(0) # wdCollapseEnd
+        return $r
+    }
+
+    function Add-TableBreak {
+        $r = Get-DocEndRange
+        $r.InsertParagraphAfter()
+        $r.Collapse(0)
+    }
+
     function Add-Paragraph {
         param (
             [string]$Text = "",
@@ -65,7 +77,8 @@ try {
             [float]$SpaceAfter = 6,
             [float]$LineSpacing = 13.5
         )
-        $p = $Doc.Paragraphs.Add()
+        $r = Get-DocEndRange
+        $p = $Doc.Paragraphs.Add($r)
         $p.Range.Text = $Text
         $p.Range.Font.Name = $FontName
         $p.Range.Font.Size = $FontSize
@@ -99,7 +112,8 @@ try {
             [int]$BorderColor = $cAzulBanesco,
             [int]$BgColor = $cBoxBg
         )
-        $table = $Doc.Tables.Add($Doc.Paragraphs.Add().Range, 1, 1)
+        $r = Get-DocEndRange
+        $table = $Doc.Tables.Add($r, 1, 1)
         $table.Borders.OutsideLineStyle = 0
         $table.Borders.InsideLineStyle = 0
         # wdBorderLeft = -2
@@ -126,12 +140,13 @@ try {
         $titleP.Range.Font.Size = 10
         $titleP.SpaceAfter = 3
 
-        Add-Paragraph -SpaceAfter 4 | Out-Null
+        Add-TableBreak
     }
 
     function Add-CodeBlock {
         param ([string]$Code)
-        $table = $Doc.Tables.Add($Doc.Paragraphs.Add().Range, 1, 1)
+        $r = Get-DocEndRange
+        $table = $Doc.Tables.Add($r, 1, 1)
         $table.Borders.OutsideLineStyle = 0
         $table.Borders.InsideLineStyle = 0
         
@@ -147,7 +162,8 @@ try {
         $cellRange.Font.Size = 9.5
         $cellRange.Font.Color = $cAzulBanesco
         $cellRange.Text = $Code
-        Add-Paragraph -SpaceAfter 4 | Out-Null
+
+        Add-TableBreak
     }
 
     # =========================================================================
@@ -162,12 +178,14 @@ try {
         -FontName "Arial" -FontSize 12.5 -FontColor $cAzulBanesco -Bold $true -Alignment 0 -SpaceBefore 0 -SpaceAfter 12 | Out-Null
 
     # Tabla de Metadatos Institucionales
-    $metaTable = $Doc.Tables.Add($Doc.Paragraphs.Add().Range, 5, 2)
+    $rMeta = Get-DocEndRange
+    $metaTable = $Doc.Tables.Add($rMeta, 5, 2)
     $metaTable.Borders.OutsideLineStyle = 1
     $metaTable.Borders.OutsideColor = $cGrisBorde
     $metaTable.Borders.InsideLineStyle = 1
     $metaTable.Borders.InsideColor = $cGrisBorde
-    $metaTable.AutoFitBehavior(2)
+    $metaTable.Columns.Item(1).Width = 140
+    $metaTable.Columns.Item(2).Width = 340
 
     $metaRows = @(
         @("Entidad / Organización:", "Banesco Banco Múltiple — Gerencia de Administración de Seguridad de TI"),
@@ -183,16 +201,13 @@ try {
         $c1.Range.Text = $metaRows[$r - 1][0]
         $c2.Range.Text = $metaRows[$r - 1][1]
         
-        $c1.Width = 140
-        $c2.Width = 340
-        
         $c1.Range.Font.Name = "Arial"; $c1.Range.Font.Size = 9.5; $c1.Range.Font.Bold = 1; $c1.Range.Font.Color = $cAzulBanesco
         $c2.Range.Font.Name = "Arial"; $c2.Range.Font.Size = 9.5; $c2.Range.Font.Color = $cTextoOscuro
         $c1.Shading.BackgroundPatternColor = $cTenue
         $c1.TopPadding = 4; $c1.BottomPadding = 4; $c2.TopPadding = 4; $c2.BottomPadding = 4
     }
 
-    Add-Paragraph -SpaceAfter 8 | Out-Null
+    Add-TableBreak
 
     # =========================================================================
     # 2. RESUMEN EJECUTIVO Y OBSERVACIÓN DE AUDITORÍA
@@ -233,7 +248,8 @@ try {
 
     # Inserción de la imagen
     if (Test-Path $ImagePath) {
-        $pImg = $Doc.Paragraphs.Add()
+        $rImg = Get-DocEndRange
+        $pImg = $Doc.Paragraphs.Add($rImg)
         $pImg.Alignment = 1 # Center
         $shape = $Doc.InlineShapes.AddPicture($ImagePath, [ref]$false, [ref]$true, $pImg.Range)
         $shape.Width = 430
@@ -253,18 +269,23 @@ try {
     Add-Paragraph -Text "En la arquitectura del sistema operativo IBM i, la longitud admitida para las credenciales está regida intrínsecamente por la variable de sistema QPWDLVL (Password Level), la cual define el algoritmo criptográfico, la distinción de mayúsculas/minúsculas y la longitud máxima procesable por el subsistema de seguridad de usuarios (QSYS2.USER_INFO):" | Out-Null
 
     # Tabla de Niveles QPWDLVL
-    $pwdTable = $Doc.Tables.Add($Doc.Paragraphs.Add().Range, 6, 5)
+    $rPwd = Get-DocEndRange
+    $pwdTable = $Doc.Tables.Add($rPwd, 6, 5)
     $pwdTable.Borders.OutsideLineStyle = 1
     $pwdTable.Borders.OutsideColor = $cGrisBorde
     $pwdTable.Borders.InsideLineStyle = 1
     $pwdTable.Borders.InsideColor = $cGrisBorde
-    $pwdTable.AutoFitBehavior(2)
+    $pwdTable.Columns.Item(1).Width = 85
+    $pwdTable.Columns.Item(2).Width = 95
+    $pwdTable.Columns.Item(3).Width = 95
+    $pwdTable.Columns.Item(4).Width = 115
+    $pwdTable.Columns.Item(5).Width = 90
 
     $pwdHeaders = @("Nivel QPWDLVL", "Longitud Máxima", "Distinción Case", "Algoritmo Hashing", "Rango QPWDMINLEN")
     for ($c = 1; $c -le 5; $c++) {
         $cell = $pwdTable.Cell(1, $c)
         $cell.Range.Text = $pwdHeaders[$c - 1]
-        $cell.Range.Font.Name = "Arial"; $cell.Range.Font.Size = 9.5; $cell.Range.Font.Bold = 1; $cell.Range.Font.Color = $cBlanco
+        $cell.Range.Font.Name = "Arial"; $cell.Range.Font.Size = 9; $cell.Range.Font.Bold = 1; $cell.Range.Font.Color = $cBlanco
         $cell.Shading.BackgroundPatternColor = $cVerdeBanesco
         $cell.TopPadding = 5; $cell.BottomPadding = 5
     }
@@ -274,21 +295,21 @@ try {
         @("1", "1 a 10 caracteres", "No (Mono-caso)", "DES + NetServer hash", "1 - 10"),
         @("2", "1 a 128 caracteres", "Sí (Case-sensitive)", "SHA-1 + DES hash", "1 - 128"),
         @("3", "1 a 128 caracteres", "Sí (Case-sensitive)", "SHA-1 (Sin hash DES)", "1 - 128"),
-        @("4 (IBM i 7.5)", "1 a 128 caracteres", "Sí (Case-sensitive)", "SHA-512 PBKDF2 (5.000 iteraciones)", "1 - 128")
+        @("4 (IBM i 7.5)", "1 a 128 caracteres", "Sí (Case-sensitive)", "SHA-512 PBKDF2 (5.000 it)", "1 - 128")
     )
 
     for ($r = 1; $r -le 5; $r++) {
         for ($c = 1; $c -le 5; $c++) {
             $cell = $pwdTable.Cell($r + 1, $c)
             $cell.Range.Text = $pwdData[$r - 1][$c - 1]
-            $cell.Range.Font.Name = "Arial"; $cell.Range.Font.Size = 9; $cell.Range.Font.Color = $cTextoOscuro
+            $cell.Range.Font.Name = "Arial"; $cell.Range.Font.Size = 8.5; $cell.Range.Font.Color = $cTextoOscuro
             if ($r % 2 -eq 0) { $cell.Shading.BackgroundPatternColor = $cTenue }
             if ($r -eq 5 -or $c -eq 5) { $cell.Range.Font.Bold = 1 }
             $cell.TopPadding = 4; $cell.BottomPadding = 4
         }
     }
 
-    Add-Paragraph -SpaceAfter 6 | Out-Null
+    Add-TableBreak
 
     $diagKernel = "DICTAMEN TÉCNICO DE CAPACIDAD DE PLATAFORMA:`r`nDado que el rango visualizado en la pantalla es estrictamente '1-128', se certifica que la LPAR se encuentra operando en nivel QPWDLVL 2, 3 o 4. En consecuencia, el núcleo (kernel) del sistema operativo IBM i v7.5 posee la capacidad nativa de admitir contraseñas de hasta 128 caracteres (superando con holgura el umbral de 12 caracteres)."
     Add-CalloutBox -Title "DICTAMEN DEL ESPECIALISTA IBM:" -Content $diagKernel -BorderColor $cVerdeBanesco -BgColor $cTenue
@@ -362,13 +383,16 @@ try {
 
     Add-Paragraph -Text "Matriz de Controles Compensatorios en la Infraestructura Banesco:" -Bold $true | Out-Null
 
-    # Tabla de Controles Compensatorios
-    $ctrlTable = $Doc.Tables.Add($Doc.Paragraphs.Add().Range, 6, 3)
+    # Tabla de Controles Compensatorios (usando rango determinístico y anchos de columna fijos)
+    $rCtrl = Get-DocEndRange
+    $ctrlTable = $Doc.Tables.Add($rCtrl, 6, 3)
     $ctrlTable.Borders.OutsideLineStyle = 1
     $ctrlTable.Borders.OutsideColor = $cGrisBorde
     $ctrlTable.Borders.InsideLineStyle = 1
     $ctrlTable.Borders.InsideColor = $cGrisBorde
-    $ctrlTable.AutoFitBehavior(2)
+    $ctrlTable.Columns.Item(1).Width = 140
+    $ctrlTable.Columns.Item(2).Width = 200
+    $ctrlTable.Columns.Item(3).Width = 140
 
     $ctrlHeaders = @("Control Compensatorio", "Mecanismo Implementado", "Efecto de Mitigación de Riesgo")
     for ($c = 1; $c -le 3; $c++) {
@@ -392,15 +416,13 @@ try {
             $cell = $ctrlTable.Cell($r + 1, $c)
             $cell.Range.Text = $ctrlData[$r - 1][$c - 1]
             $cell.Range.Font.Name = "Arial"; $cell.Range.Font.Size = 8.5; $cell.Range.Font.Color = $cTextoOscuro
-            if ($c -eq 1) { $cell.Range.Font.Bold = 1; $cell.Range.Font.Color = $cAzulBanesco; $cell.Width = 140 }
-            elseif ($c -eq 2) { $cell.Width = 200 }
-            elseif ($c -eq 3) { $cell.Width = 140 }
+            if ($c -eq 1) { $cell.Range.Font.Bold = 1; $cell.Range.Font.Color = $cAzulBanesco }
             if ($r % 2 -eq 0) { $cell.Shading.BackgroundPatternColor = $cTenue }
             $cell.TopPadding = 4; $cell.BottomPadding = 4
         }
     }
 
-    Add-Paragraph -SpaceAfter 8 | Out-Null
+    Add-TableBreak
 
     # =========================================================================
     # 7. CONCLUSIONES Y RECOMENDACIÓN FINAL
@@ -415,7 +437,7 @@ try {
     Add-Paragraph -Text "3. Vigencia y Certificación: El presente informe cumple con los estándares técnicos y de gobernanza de Banesco Banco Múltiple y está listo para ser formalizado ante el equipo de Auditoría QSA." | Out-Null
 
     # Guardar en ambas ubicaciones
-    Write-Host "[INFO] Guardando documento en Word format (.docx)..." -ForegroundColor Cyan
+    Write-Host "[INFO] Guardando documento en formato Word (.docx)..." -ForegroundColor Cyan
     
     $Doc.SaveAs([ref]$DocPath1, [ref]16)
     Write-Host "[OK] Documento guardado exitosamente en: $DocPath1" -ForegroundColor Green
@@ -438,4 +460,3 @@ catch {
     }
     exit 1
 }
-

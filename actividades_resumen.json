@@ -1,0 +1,3618 @@
+{
+  "ArchivoFuente": "C:\\Users\\jespereira\\Downloads\\_Clasificación de Actividades No Recurrentes V1.0.xlsx",
+  "FechaGeneracion": "2026-11-09 18:22:43",
+  "TotalesGlobales": {
+    "TotalItems": 313,
+    "TotalAbiertos": 187,
+    "TotalCerrados": 126,
+    "PorcentajeAvance": 40.26
+  },
+  "ConsolidadoGlobalAreas": {
+    "Canales": {
+      "Abiertos": 0,
+      "Cerrados": 2,
+      "Total": 2
+    },
+    "No aplica para Banesco": {
+      "Abiertos": 5,
+      "Cerrados": 20,
+      "Total": 25
+    },
+    "Ciberseguridad": {
+      "Abiertos": 34,
+      "Cerrados": 43,
+      "Total": 77
+    },
+    "Administracion de Seguridad": {
+      "Abiertos": 37,
+      "Cerrados": 58,
+      "Total": 95
+    },
+    "Continuidad": {
+      "Abiertos": 1,
+      "Cerrados": 0,
+      "Total": 1
+    },
+    "Control Normativo de Seguridad": {
+      "Abiertos": 11,
+      "Cerrados": 0,
+      "Total": 11
+    },
+    "Capital Humano": {
+      "Abiertos": 4,
+      "Cerrados": 0,
+      "Total": 4
+    },
+    "Ingenieria de Seguridad": {
+      "Abiertos": 13,
+      "Cerrados": 2,
+      "Total": 15
+    },
+    "Seguridad Fisica/ Centro de Serv. Operaciones": {
+      "Abiertos": 6,
+      "Cerrados": 0,
+      "Total": 6
+    },
+    "Seguridad Fisica": {
+      "Abiertos": 10,
+      "Cerrados": 0,
+      "Total": 10
+    },
+    "No aplica para Banesco. BBU No cuenta con protocolos inseguros": {
+      "Abiertos": 1,
+      "Cerrados": 0,
+      "Total": 1
+    },
+    "Operaciones": {
+      "Abiertos": 5,
+      "Cerrados": 0,
+      "Total": 5
+    },
+    "Proveedores y Servicios/ Control Normativo de Seguridad": {
+      "Abiertos": 11,
+      "Cerrados": 0,
+      "Total": 11
+    },
+    "Ciberseguridad/ Desarrollo de Talento": {
+      "Abiertos": 0,
+      "Cerrados": 1,
+      "Total": 1
+    },
+    "Seguridad Fisica/ Almacenamiento": {
+      "Abiertos": 2,
+      "Cerrados": 0,
+      "Total": 2
+    },
+    "Seguridad Fisica/ Ingenieria de Seguridad": {
+      "Abiertos": 2,
+      "Cerrados": 0,
+      "Total": 2
+    },
+    "Seguridad Fisica/ Almacenamiento/ Centro de Serv. Operaciones": {
+      "Abiertos": 3,
+      "Cerrados": 0,
+      "Total": 3
+    },
+    "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI / Ciberseguridad / Ingeniería de Seguridad": {
+      "Abiertos": 3,
+      "Cerrados": 0,
+      "Total": 3
+    },
+    "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI": {
+      "Abiertos": 1,
+      "Cerrados": 0,
+      "Total": 1
+    },
+    "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI/ Ciberseguridad": {
+      "Abiertos": 2,
+      "Cerrados": 0,
+      "Total": 2
+    },
+    "Ciberseguridad / Telec. e Infraest. TI": {
+      "Abiertos": 3,
+      "Cerrados": 0,
+      "Total": 3
+    },
+    "Ingeniería de Seguridad/Ciberseguridad": {
+      "Abiertos": 3,
+      "Cerrados": 0,
+      "Total": 3
+    },
+    "Administración de Seguridad": {
+      "Abiertos": 8,
+      "Cerrados": 0,
+      "Total": 8
+    },
+    "Cibeseguridad": {
+      "Abiertos": 1,
+      "Cerrados": 0,
+      "Total": 1
+    },
+    "Gerencia de Ciberseguridad": {
+      "Abiertos": 2,
+      "Cerrados": 0,
+      "Total": 2
+    },
+    "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI/ Ciberseguridad / Gcia Ingenieria de Seguridad": {
+      "Abiertos": 5,
+      "Cerrados": 0,
+      "Total": 5
+    },
+    "Control de Perdidas/ Centro de Servicio de Operaciones": {
+      "Abiertos": 3,
+      "Cerrados": 0,
+      "Total": 3
+    },
+    "Gcia. Arquitectura Empresarial y Capac./ Gcia. de Soporte a Campo/ Gcia Ingenieria de Seguridad": {
+      "Abiertos": 1,
+      "Cerrados": 0,
+      "Total": 1
+    },
+    "Gcia. Ejec. Continuidad de Negocio": {
+      "Abiertos": 1,
+      "Cerrados": 0,
+      "Total": 1
+    },
+    "Ingenieria de Seguridad / Gcia. Desarrollo de Talento": {
+      "Abiertos": 8,
+      "Cerrados": 0,
+      "Total": 8
+    },
+    "Seguridad Fisica/ Capital Humano/ Gcia Adquisición y Movilidad de Talento": {
+      "Abiertos": 1,
+      "Cerrados": 0,
+      "Total": 1
+    }
+  },
+  "Pestanas": [
+    {
+      "Pestana": "NPF",
+      "ColumnaAreaIndex": 9,
+      "ColumnaResponsableIndex": 10,
+      "ColumnaEstatusIndex": 15,
+      "TotalAbiertos": 14,
+      "TotalCerrados": 45,
+      "Total": 59,
+      "PorcentajeCerrado": 76.27,
+      "Areas": {
+        "Canales": {
+          "Abiertos": 0,
+          "Cerrados": 2,
+          "Total": 2
+        },
+        "No aplica para Banesco": {
+          "Abiertos": 0,
+          "Cerrados": 13,
+          "Total": 13
+        },
+        "Ciberseguridad": {
+          "Abiertos": 3,
+          "Cerrados": 14,
+          "Total": 17
+        },
+        "Administracion de Seguridad": {
+          "Abiertos": 6,
+          "Cerrados": 16,
+          "Total": 22
+        },
+        "Continuidad": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Control Normativo de Seguridad": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Capital Humano": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Ingenieria de Seguridad": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        }
+      },
+      "Responsables": {
+        "Alexis Guevara/ Nikla Villamizar": {
+          "Abiertos": 0,
+          "Cerrados": 1,
+          "Total": 1
+        },
+        "No aplica para Banesco": {
+          "Abiertos": 0,
+          "Cerrados": 13,
+          "Total": 13
+        },
+        "Hindelver Mogollon/ Alexis Guevara": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Alexis Guevara": {
+          "Abiertos": 6,
+          "Cerrados": 16,
+          "Total": 22
+        },
+        "Hindelver Mogollon": {
+          "Abiertos": 0,
+          "Cerrados": 12,
+          "Total": 12
+        },
+        "Yairzuri Castillo/ Nikla Villamizar": {
+          "Abiertos": 0,
+          "Cerrados": 1,
+          "Total": 1
+        },
+        "Carlos Molina/ Joseily Gonzalez Gorrin": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Jesus Irausquin/ Marlene Ortiz": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Barbara Vallejos/ Yesenia Morales": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Andreska Mata/ Hindelver Mogollon": {
+          "Abiertos": 2,
+          "Cerrados": 2,
+          "Total": 4
+        },
+        "Andreska Mata/ Yairzury Castillo": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        }
+      },
+      "Items": [
+        {
+          "Fila": 3,
+          "Id": "1",
+          "Area": "Canales",
+          "Responsable": "Alexis Guevara/ Nikla Villamizar",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.3.2"
+        },
+        {
+          "Fila": 4,
+          "Id": "2",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.3.3.a"
+        },
+        {
+          "Fila": 5,
+          "Id": "3",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.3.3.b"
+        },
+        {
+          "Fila": 6,
+          "Id": "4",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon/ Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.4.2.a"
+        },
+        {
+          "Fila": 7,
+          "Id": "5",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.4.2.b"
+        },
+        {
+          "Fila": 8,
+          "Id": "6",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.4.2.c"
+        },
+        {
+          "Fila": 9,
+          "Id": "7",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.5.1.1.a"
+        },
+        {
+          "Fila": 10,
+          "Id": "8",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.5.1.1.b"
+        },
+        {
+          "Fila": 11,
+          "Id": "9",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.5.1.1.c"
+        },
+        {
+          "Fila": 12,
+          "Id": "10",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.5.1.1.d"
+        },
+        {
+          "Fila": 13,
+          "Id": "11",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.5.1.2.a"
+        },
+        {
+          "Fila": 14,
+          "Id": "12",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.5.1.2.b"
+        },
+        {
+          "Fila": 15,
+          "Id": "13",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "4.2.1.a"
+        },
+        {
+          "Fila": 16,
+          "Id": "14",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "4.2.1.b"
+        },
+        {
+          "Fila": 17,
+          "Id": "15",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "4.2.1.c"
+        },
+        {
+          "Fila": 18,
+          "Id": "16",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "4.2.1.d"
+        },
+        {
+          "Fila": 19,
+          "Id": "17",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.3.3.a"
+        },
+        {
+          "Fila": 20,
+          "Id": "18",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.3.3.b"
+        },
+        {
+          "Fila": 21,
+          "Id": "19",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.3.3.c"
+        },
+        {
+          "Fila": 22,
+          "Id": "20",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.4.1"
+        },
+        {
+          "Fila": 23,
+          "Id": "21",
+          "Area": "Canales",
+          "Responsable": "Yairzuri Castillo/ Nikla Villamizar",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "6.3.2.a"
+        },
+        {
+          "Fila": 24,
+          "Id": "22",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "6.4.3.a"
+        },
+        {
+          "Fila": 25,
+          "Id": "23",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "6.4.3.b"
+        },
+        {
+          "Fila": 26,
+          "Id": "24",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "7.2.5.a"
+        },
+        {
+          "Fila": 27,
+          "Id": "25",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "7.2.5.b"
+        },
+        {
+          "Fila": 28,
+          "Id": "26",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "8.3.6"
+        },
+        {
+          "Fila": 29,
+          "Id": "27",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "8.4.2.a"
+        },
+        {
+          "Fila": 30,
+          "Id": "28",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "8.4.2.b"
+        },
+        {
+          "Fila": 31,
+          "Id": "29",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "8.5.1.a"
+        },
+        {
+          "Fila": 32,
+          "Id": "30",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "8.5.1.b"
+        },
+        {
+          "Fila": 33,
+          "Id": "31",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "8.5.1.c"
+        },
+        {
+          "Fila": 34,
+          "Id": "32",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "8.5.1.d"
+        },
+        {
+          "Fila": 35,
+          "Id": "33",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "8.5.1.e"
+        },
+        {
+          "Fila": 36,
+          "Id": "34",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "8.6.1"
+        },
+        {
+          "Fila": 37,
+          "Id": "35",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "8.6.2.a"
+        },
+        {
+          "Fila": 38,
+          "Id": "36",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "8.6.2.b"
+        },
+        {
+          "Fila": 39,
+          "Id": "37",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "10.4.1.1"
+        },
+        {
+          "Fila": 40,
+          "Id": "38",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "10.7.2.a"
+        },
+        {
+          "Fila": 41,
+          "Id": "39",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "10.7.2.b"
+        },
+        {
+          "Fila": 42,
+          "Id": "40",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "11.3.1.2.d"
+        },
+        {
+          "Fila": 43,
+          "Id": "41",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "11.4.7"
+        },
+        {
+          "Fila": 44,
+          "Id": "42",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "11.5.1.1.a"
+        },
+        {
+          "Fila": 45,
+          "Id": "43",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "11.5.1.1.b"
+        },
+        {
+          "Fila": 46,
+          "Id": "44",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "11.5.1.1.c"
+        },
+        {
+          "Fila": 47,
+          "Id": "45",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "11.6.1.b"
+        },
+        {
+          "Fila": 48,
+          "Id": "46",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "11.6.1.c"
+        },
+        {
+          "Fila": 49,
+          "Id": "47",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "11.6.1.d"
+        },
+        {
+          "Fila": 50,
+          "Id": "48",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.3.3"
+        },
+        {
+          "Fila": 51,
+          "Id": "49",
+          "Area": "Continuidad",
+          "Responsable": "Carlos Molina/ Joseily Gonzalez Gorrin",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.3.4"
+        },
+        {
+          "Fila": 52,
+          "Id": "50",
+          "Area": "Control Normativo de Seguridad",
+          "Responsable": "Jesus Irausquin/ Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.5.2.1.b"
+        },
+        {
+          "Fila": 53,
+          "Id": "51",
+          "Area": "Capital Humano",
+          "Responsable": "Barbara Vallejos/ Yesenia Morales",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.5.3.a"
+        },
+        {
+          "Fila": 54,
+          "Id": "52",
+          "Area": "Capital Humano",
+          "Responsable": "Barbara Vallejos/ Yesenia Morales",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.5.3.b"
+        },
+        {
+          "Fila": 55,
+          "Id": "53",
+          "Area": "Ciberseguridad",
+          "Responsable": "Andreska Mata/ Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "12.6.3.1"
+        },
+        {
+          "Fila": 56,
+          "Id": "54",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Andreska Mata/ Yairzury Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.6.3.2"
+        },
+        {
+          "Fila": 57,
+          "Id": "55",
+          "Area": "Ciberseguridad",
+          "Responsable": "Andreska Mata/ Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.10.4.1.a"
+        },
+        {
+          "Fila": 58,
+          "Id": "56",
+          "Area": "Ciberseguridad",
+          "Responsable": "Andreska Mata/ Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.10.4.1.b"
+        },
+        {
+          "Fila": 59,
+          "Id": "57",
+          "Area": "Ciberseguridad",
+          "Responsable": "Andreska Mata/ Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "12.10.5"
+        },
+        {
+          "Fila": 60,
+          "Id": "58",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "12.10.7.a"
+        },
+        {
+          "Fila": 61,
+          "Id": "59",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "12.10.7.b"
+        }
+      ]
+    },
+    {
+      "Pestana": "Criticidad 1",
+      "ColumnaAreaIndex": 9,
+      "ColumnaResponsableIndex": 10,
+      "ColumnaEstatusIndex": 15,
+      "TotalAbiertos": 4,
+      "TotalCerrados": 6,
+      "Total": 10,
+      "PorcentajeCerrado": 60,
+      "Areas": {
+        "Administracion de Seguridad": {
+          "Abiertos": 2,
+          "Cerrados": 3,
+          "Total": 5
+        },
+        "No aplica para Banesco": {
+          "Abiertos": 0,
+          "Cerrados": 3,
+          "Total": 3
+        },
+        "Seguridad Fisica/ Centro de Serv. Operaciones": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Seguridad Fisica": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        }
+      },
+      "Responsables": {
+        "Alexis Guevara": {
+          "Abiertos": 2,
+          "Cerrados": 3,
+          "Total": 5
+        },
+        "No aplica para Banesco": {
+          "Abiertos": 0,
+          "Cerrados": 3,
+          "Total": 3
+        },
+        "Aurelio Gomez / Carla Bastidas/ De Caro Alfonso": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        }
+      },
+      "Items": [
+        {
+          "Fila": 2,
+          "Id": "1",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.3.1.a"
+        },
+        {
+          "Fila": 3,
+          "Id": "2",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.3.1.b"
+        },
+        {
+          "Fila": 4,
+          "Id": "3",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.3.1.1"
+        },
+        {
+          "Fila": 5,
+          "Id": "4",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.3.1.2"
+        },
+        {
+          "Fila": 6,
+          "Id": "5",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.3.1.3"
+        },
+        {
+          "Fila": 7,
+          "Id": "6",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "9.4.6.a"
+        },
+        {
+          "Fila": 8,
+          "Id": "7",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "9.4.6.b"
+        },
+        {
+          "Fila": 9,
+          "Id": "8",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "9.4.6.c"
+        },
+        {
+          "Fila": 10,
+          "Id": "9",
+          "Area": "Seguridad Fisica/ Centro de Serv. Operaciones",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ De Caro Alfonso",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.7.a"
+        },
+        {
+          "Fila": 11,
+          "Id": "10",
+          "Area": "Seguridad Fisica",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ De Caro Alfonso",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.7.b"
+        }
+      ]
+    },
+    {
+      "Pestana": "Criticidad 2",
+      "ColumnaAreaIndex": 9,
+      "ColumnaResponsableIndex": 10,
+      "ColumnaEstatusIndex": 15,
+      "TotalAbiertos": 54,
+      "TotalCerrados": 43,
+      "Total": 97,
+      "PorcentajeCerrado": 44.33,
+      "Areas": {
+        "Ingenieria de Seguridad": {
+          "Abiertos": 6,
+          "Cerrados": 2,
+          "Total": 8
+        },
+        "Ciberseguridad": {
+          "Abiertos": 12,
+          "Cerrados": 29,
+          "Total": 41
+        },
+        "Administracion de Seguridad": {
+          "Abiertos": 14,
+          "Cerrados": 7,
+          "Total": 21
+        },
+        "No aplica para Banesco. BBU No cuenta con protocolos inseguros": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "No aplica para Banesco": {
+          "Abiertos": 0,
+          "Cerrados": 4,
+          "Total": 4
+        },
+        "Seguridad Fisica": {
+          "Abiertos": 5,
+          "Cerrados": 0,
+          "Total": 5
+        },
+        "Operaciones": {
+          "Abiertos": 5,
+          "Cerrados": 0,
+          "Total": 5
+        },
+        "Proveedores y Servicios/ Control Normativo de Seguridad": {
+          "Abiertos": 11,
+          "Cerrados": 0,
+          "Total": 11
+        },
+        "Ciberseguridad/ Desarrollo de Talento": {
+          "Abiertos": 0,
+          "Cerrados": 1,
+          "Total": 1
+        }
+      },
+      "Responsables": {
+        "Yairzuri Castillo": {
+          "Abiertos": 6,
+          "Cerrados": 2,
+          "Total": 8
+        },
+        "Hindelver Mogollon": {
+          "Abiertos": 10,
+          "Cerrados": 19,
+          "Total": 29
+        },
+        "Rene Ortega / Hindelver Mogollon / Yairzuri Castillo": {
+          "Abiertos": 1,
+          "Cerrados": 1,
+          "Total": 2
+        },
+        "Alexis Guevara": {
+          "Abiertos": 14,
+          "Cerrados": 7,
+          "Total": 21
+        },
+        "No aplica para Banesco. BBU No cuenta con protocolos inseguros": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "No aplica para Banesco": {
+          "Abiertos": 0,
+          "Cerrados": 4,
+          "Total": 4
+        },
+        "Hindelver Mogollon/Alexis Guevara": {
+          "Abiertos": 0,
+          "Cerrados": 9,
+          "Total": 9
+        },
+        "Aurelio Gomez / Carla Bastidas": {
+          "Abiertos": 5,
+          "Cerrados": 0,
+          "Total": 5
+        },
+        "Richard Mejias": {
+          "Abiertos": 5,
+          "Cerrados": 0,
+          "Total": 5
+        },
+        "Hindelver Mogollon / Tersey Caceres": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Belflor Rivero/ Marlene Ortiz": {
+          "Abiertos": 11,
+          "Cerrados": 0,
+          "Total": 11
+        },
+        "Hindelver Mogollon/ Marianela Luzardo": {
+          "Abiertos": 0,
+          "Cerrados": 1,
+          "Total": 1
+        }
+      },
+      "Items": [
+        {
+          "Fila": 2,
+          "Id": "1",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.2.1.a"
+        },
+        {
+          "Fila": 3,
+          "Id": "2",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.2.1.b"
+        },
+        {
+          "Fila": 4,
+          "Id": "3",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.2.5.a"
+        },
+        {
+          "Fila": 5,
+          "Id": "4",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.2.5.b"
+        },
+        {
+          "Fila": 6,
+          "Id": "5",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.2.6.a"
+        },
+        {
+          "Fila": 7,
+          "Id": "6",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.2.6.b"
+        },
+        {
+          "Fila": 8,
+          "Id": "7",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.2.8"
+        },
+        {
+          "Fila": 9,
+          "Id": "8",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.3.1.a"
+        },
+        {
+          "Fila": 10,
+          "Id": "9",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.3.1.b"
+        },
+        {
+          "Fila": 11,
+          "Id": "10",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.3.2.a"
+        },
+        {
+          "Fila": 12,
+          "Id": "11",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.3.2.b"
+        },
+        {
+          "Fila": 13,
+          "Id": "12",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.4.1.a"
+        },
+        {
+          "Fila": 14,
+          "Id": "13",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.4.1.b"
+        },
+        {
+          "Fila": 15,
+          "Id": "14",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.4.2"
+        },
+        {
+          "Fila": 16,
+          "Id": "15",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.4.3"
+        },
+        {
+          "Fila": 17,
+          "Id": "16",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.4.4.a"
+        },
+        {
+          "Fila": 18,
+          "Id": "17",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.4.4.b"
+        },
+        {
+          "Fila": 19,
+          "Id": "18",
+          "Area": "Ciberseguridad",
+          "Responsable": "Rene Ortega / Hindelver Mogollon / Yairzuri Castillo",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.4.5.a"
+        },
+        {
+          "Fila": 20,
+          "Id": "19",
+          "Area": "Ciberseguridad",
+          "Responsable": "Rene Ortega / Hindelver Mogollon / Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.4.5.b"
+        },
+        {
+          "Fila": 21,
+          "Id": "20",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.5.1.a"
+        },
+        {
+          "Fila": 22,
+          "Id": "21",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "1.5.1.b"
+        },
+        {
+          "Fila": 23,
+          "Id": "22",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.2.2.a"
+        },
+        {
+          "Fila": 24,
+          "Id": "23",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.2.2.b"
+        },
+        {
+          "Fila": 25,
+          "Id": "24",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.2.2.c"
+        },
+        {
+          "Fila": 26,
+          "Id": "25",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "2.2.3.a"
+        },
+        {
+          "Fila": 27,
+          "Id": "26",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "2.2.3.b"
+        },
+        {
+          "Fila": 28,
+          "Id": "27",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "2.2.3.c"
+        },
+        {
+          "Fila": 29,
+          "Id": "28",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.2.5.a"
+        },
+        {
+          "Fila": 30,
+          "Id": "29",
+          "Area": "No aplica para Banesco. BBU No cuenta con protocolos inseguros",
+          "Responsable": "No aplica para Banesco. BBU No cuenta con protocolos inseguros",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.2.5.b"
+        },
+        {
+          "Fila": 31,
+          "Id": "30",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.2.6.a"
+        },
+        {
+          "Fila": 32,
+          "Id": "31",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.2.6.b"
+        },
+        {
+          "Fila": 33,
+          "Id": "32",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.2.6.c"
+        },
+        {
+          "Fila": 34,
+          "Id": "33",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.2.7.a"
+        },
+        {
+          "Fila": 35,
+          "Id": "34",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.2.7.b"
+        },
+        {
+          "Fila": 36,
+          "Id": "35",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.2.7.c"
+        },
+        {
+          "Fila": 37,
+          "Id": "36",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.2.7.d"
+        },
+        {
+          "Fila": 38,
+          "Id": "37",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "2.3.1.a"
+        },
+        {
+          "Fila": 39,
+          "Id": "38",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "2.3.1.b"
+        },
+        {
+          "Fila": 40,
+          "Id": "39",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "2.3.1.c"
+        },
+        {
+          "Fila": 41,
+          "Id": "40",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "2.3.2"
+        },
+        {
+          "Fila": 42,
+          "Id": "41",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "4.2.2.a"
+        },
+        {
+          "Fila": 43,
+          "Id": "42",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "4.2.2.b"
+        },
+        {
+          "Fila": 44,
+          "Id": "43",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon/Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.2.1.a"
+        },
+        {
+          "Fila": 45,
+          "Id": "44",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.2.1.b"
+        },
+        {
+          "Fila": 46,
+          "Id": "45",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon/Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.2.2"
+        },
+        {
+          "Fila": 47,
+          "Id": "46",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon/Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.3.1.a"
+        },
+        {
+          "Fila": 48,
+          "Id": "47",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon/Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.3.1.b"
+        },
+        {
+          "Fila": 49,
+          "Id": "48",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon/Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.3.2.a"
+        },
+        {
+          "Fila": 50,
+          "Id": "49",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon/Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.3.2.b"
+        },
+        {
+          "Fila": 51,
+          "Id": "50",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon/Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.3.4"
+        },
+        {
+          "Fila": 52,
+          "Id": "51",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon/Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.3.5.a"
+        },
+        {
+          "Fila": 53,
+          "Id": "52",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon/Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "5.3.5.b"
+        },
+        {
+          "Fila": 54,
+          "Id": "53",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "8.2.1.a"
+        },
+        {
+          "Fila": 55,
+          "Id": "54",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "8.2.1.b"
+        },
+        {
+          "Fila": 56,
+          "Id": "55",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "8.2.4"
+        },
+        {
+          "Fila": 57,
+          "Id": "56",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "8.2.7"
+        },
+        {
+          "Fila": 58,
+          "Id": "57",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "8.3.5"
+        },
+        {
+          "Fila": 59,
+          "Id": "58",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "8.4.1.a"
+        },
+        {
+          "Fila": 60,
+          "Id": "59",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "8.4.1.b"
+        },
+        {
+          "Fila": 61,
+          "Id": "60",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "8.4.3.a"
+        },
+        {
+          "Fila": 62,
+          "Id": "61",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "8.4.3.b"
+        },
+        {
+          "Fila": 63,
+          "Id": "62",
+          "Area": "Seguridad Fisica",
+          "Responsable": "Aurelio Gomez / Carla Bastidas",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.2.1"
+        },
+        {
+          "Fila": 64,
+          "Id": "63",
+          "Area": "Seguridad Fisica",
+          "Responsable": "Aurelio Gomez / Carla Bastidas",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.2.1.1.c"
+        },
+        {
+          "Fila": 65,
+          "Id": "64",
+          "Area": "Seguridad Fisica",
+          "Responsable": "Aurelio Gomez / Carla Bastidas",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.2.2"
+        },
+        {
+          "Fila": 66,
+          "Id": "65",
+          "Area": "Seguridad Fisica",
+          "Responsable": "Aurelio Gomez / Carla Bastidas",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.2.3"
+        },
+        {
+          "Fila": 67,
+          "Id": "66",
+          "Area": "Seguridad Fisica",
+          "Responsable": "Aurelio Gomez / Carla Bastidas",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.2.4"
+        },
+        {
+          "Fila": 68,
+          "Id": "67",
+          "Area": "Operaciones",
+          "Responsable": "Richard Mejias",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.5.1"
+        },
+        {
+          "Fila": 69,
+          "Id": "68",
+          "Area": "Operaciones",
+          "Responsable": "Richard Mejias",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.5.1.1.b"
+        },
+        {
+          "Fila": 70,
+          "Id": "69",
+          "Area": "Operaciones",
+          "Responsable": "Richard Mejias",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.5.1.1.c"
+        },
+        {
+          "Fila": 71,
+          "Id": "70",
+          "Area": "Operaciones",
+          "Responsable": "Richard Mejias",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.5.1.3.a"
+        },
+        {
+          "Fila": 72,
+          "Id": "71",
+          "Area": "Operaciones",
+          "Responsable": "Richard Mejias",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.5.1.3.b"
+        },
+        {
+          "Fila": 73,
+          "Id": "72",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "11.3.1.d"
+        },
+        {
+          "Fila": 74,
+          "Id": "73",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "11.3.2.c"
+        },
+        {
+          "Fila": 75,
+          "Id": "74",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "11.4.1"
+        },
+        {
+          "Fila": 76,
+          "Id": "75",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "11.4.5.b"
+        },
+        {
+          "Fila": 77,
+          "Id": "76",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "11.4.5.c"
+        },
+        {
+          "Fila": 78,
+          "Id": "77",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "11.4.6.b"
+        },
+        {
+          "Fila": 79,
+          "Id": "78",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon / Tersey Caceres",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "11.5.1.a"
+        },
+        {
+          "Fila": 80,
+          "Id": "79",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "11.5.1.b"
+        },
+        {
+          "Fila": 81,
+          "Id": "80",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "11.5.1.c"
+        },
+        {
+          "Fila": 82,
+          "Id": "81",
+          "Area": "Proveedores y Servicios/ Control Normativo de Seguridad",
+          "Responsable": "Belflor Rivero/ Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.8.1.a"
+        },
+        {
+          "Fila": 83,
+          "Id": "82",
+          "Area": "Proveedores y Servicios/ Control Normativo de Seguridad",
+          "Responsable": "Belflor Rivero/ Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.8.1.b"
+        },
+        {
+          "Fila": 84,
+          "Id": "83",
+          "Area": "Proveedores y Servicios/ Control Normativo de Seguridad",
+          "Responsable": "Belflor Rivero/ Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.8.2.a"
+        },
+        {
+          "Fila": 85,
+          "Id": "84",
+          "Area": "Proveedores y Servicios/ Control Normativo de Seguridad",
+          "Responsable": "Belflor Rivero/ Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.8.2.b"
+        },
+        {
+          "Fila": 86,
+          "Id": "85",
+          "Area": "Proveedores y Servicios/ Control Normativo de Seguridad",
+          "Responsable": "Belflor Rivero/ Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.8.3.a"
+        },
+        {
+          "Fila": 87,
+          "Id": "86",
+          "Area": "Proveedores y Servicios/ Control Normativo de Seguridad",
+          "Responsable": "Belflor Rivero/ Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.8.3.b"
+        },
+        {
+          "Fila": 88,
+          "Id": "87",
+          "Area": "Proveedores y Servicios/ Control Normativo de Seguridad",
+          "Responsable": "Belflor Rivero/ Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.8.4.a"
+        },
+        {
+          "Fila": 89,
+          "Id": "88",
+          "Area": "Proveedores y Servicios/ Control Normativo de Seguridad",
+          "Responsable": "Belflor Rivero/ Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.8.5.a"
+        },
+        {
+          "Fila": 90,
+          "Id": "89",
+          "Area": "Proveedores y Servicios/ Control Normativo de Seguridad",
+          "Responsable": "Belflor Rivero/ Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.8.5.b"
+        },
+        {
+          "Fila": 91,
+          "Id": "90",
+          "Area": "Proveedores y Servicios/ Control Normativo de Seguridad",
+          "Responsable": "Belflor Rivero/ Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.9.1"
+        },
+        {
+          "Fila": 92,
+          "Id": "91",
+          "Area": "Proveedores y Servicios/ Control Normativo de Seguridad",
+          "Responsable": "Belflor Rivero/ Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.9.2"
+        },
+        {
+          "Fila": 93,
+          "Id": "92",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.10.1.a"
+        },
+        {
+          "Fila": 94,
+          "Id": "93",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.10.1.b"
+        },
+        {
+          "Fila": 95,
+          "Id": "94",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "12.10.3"
+        },
+        {
+          "Fila": 96,
+          "Id": "95",
+          "Area": "Ciberseguridad/ Desarrollo de Talento",
+          "Responsable": "Hindelver Mogollon/ Marianela Luzardo",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "12.10.4"
+        },
+        {
+          "Fila": 97,
+          "Id": "96",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.10.6.a"
+        },
+        {
+          "Fila": 98,
+          "Id": "97",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.10.6.b"
+        }
+      ]
+    },
+    {
+      "Pestana": "Criticidad 3",
+      "ColumnaAreaIndex": 9,
+      "ColumnaResponsableIndex": 10,
+      "ColumnaEstatusIndex": 15,
+      "TotalAbiertos": 8,
+      "TotalCerrados": 8,
+      "Total": 16,
+      "PorcentajeCerrado": 50,
+      "Areas": {
+        "Ingenieria de Seguridad": {
+          "Abiertos": 6,
+          "Cerrados": 0,
+          "Total": 6
+        },
+        "No aplica para Banesco": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Administracion de Seguridad": {
+          "Abiertos": 0,
+          "Cerrados": 8,
+          "Total": 8
+        }
+      },
+      "Responsables": {
+        "Yairzuri Castillo": {
+          "Abiertos": 6,
+          "Cerrados": 0,
+          "Total": 6
+        },
+        "No aplica para Banesco": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Alexis Guevara": {
+          "Abiertos": 0,
+          "Cerrados": 8,
+          "Total": 8
+        }
+      },
+      "Items": [
+        {
+          "Fila": 3,
+          "Id": "1",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.2.3.a"
+        },
+        {
+          "Fila": 4,
+          "Id": "2",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.2.3.b"
+        },
+        {
+          "Fila": 5,
+          "Id": "3",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.2.3.1.a"
+        },
+        {
+          "Fila": 6,
+          "Id": "4",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.2.3.1.b"
+        },
+        {
+          "Fila": 7,
+          "Id": "5",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.2.4"
+        },
+        {
+          "Fila": 8,
+          "Id": "6",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.5.3.a"
+        },
+        {
+          "Fila": 9,
+          "Id": "7",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.5.3.b"
+        },
+        {
+          "Fila": 10,
+          "Id": "8",
+          "Area": "Ingenieria de Seguridad",
+          "Responsable": "Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.5.3.c"
+        },
+        {
+          "Fila": 11,
+          "Id": "9",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "6.5.4.a"
+        },
+        {
+          "Fila": 12,
+          "Id": "10",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "6.5.4.b"
+        },
+        {
+          "Fila": 13,
+          "Id": "11",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "6.5.5.a"
+        },
+        {
+          "Fila": 14,
+          "Id": "12",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "6.5.5.b"
+        },
+        {
+          "Fila": 15,
+          "Id": "13",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "6.5.5.c"
+        },
+        {
+          "Fila": 16,
+          "Id": "14",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "6.5.6.a"
+        },
+        {
+          "Fila": 17,
+          "Id": "15",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "6.5.6.b"
+        },
+        {
+          "Fila": 18,
+          "Id": "16",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "6.5.6.c"
+        }
+      ]
+    },
+    {
+      "Pestana": "Criticidad 4",
+      "ColumnaAreaIndex": 9,
+      "ColumnaResponsableIndex": 10,
+      "ColumnaEstatusIndex": 15,
+      "TotalAbiertos": 15,
+      "TotalCerrados": 9,
+      "Total": 24,
+      "PorcentajeCerrado": 37.5,
+      "Areas": {
+        "Administracion de Seguridad": {
+          "Abiertos": 1,
+          "Cerrados": 9,
+          "Total": 10
+        },
+        "Ciberseguridad": {
+          "Abiertos": 14,
+          "Cerrados": 0,
+          "Total": 14
+        }
+      },
+      "Responsables": {
+        "Alexis Guevara": {
+          "Abiertos": 1,
+          "Cerrados": 9,
+          "Total": 10
+        },
+        "Hindelver Mogollon": {
+          "Abiertos": 14,
+          "Cerrados": 0,
+          "Total": 14
+        }
+      },
+      "Items": [
+        {
+          "Fila": 3,
+          "Id": "1",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "7.2.1.a"
+        },
+        {
+          "Fila": 4,
+          "Id": "2",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "7.2.1.b"
+        },
+        {
+          "Fila": 5,
+          "Id": "3",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "7.2.2.a"
+        },
+        {
+          "Fila": 6,
+          "Id": "4",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "7.2.2.b"
+        },
+        {
+          "Fila": 7,
+          "Id": "5",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "7.2.2.c"
+        },
+        {
+          "Fila": 8,
+          "Id": "6",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "7.2.3.a"
+        },
+        {
+          "Fila": 9,
+          "Id": "7",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "7.2.3.b"
+        },
+        {
+          "Fila": 10,
+          "Id": "8",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "7.3.1"
+        },
+        {
+          "Fila": 11,
+          "Id": "9",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "7.3.2"
+        },
+        {
+          "Fila": 12,
+          "Id": "10",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "7.3.3"
+        },
+        {
+          "Fila": 13,
+          "Id": "11",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.2.1"
+        },
+        {
+          "Fila": 14,
+          "Id": "12",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.2.1.1"
+        },
+        {
+          "Fila": 15,
+          "Id": "13",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.2.1.2"
+        },
+        {
+          "Fila": 16,
+          "Id": "14",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.2.1.3"
+        },
+        {
+          "Fila": 17,
+          "Id": "15",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.2.1.4"
+        },
+        {
+          "Fila": 18,
+          "Id": "16",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.2.1.5"
+        },
+        {
+          "Fila": 19,
+          "Id": "17",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.2.1.6"
+        },
+        {
+          "Fila": 20,
+          "Id": "18",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.2.1.7"
+        },
+        {
+          "Fila": 21,
+          "Id": "19",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.2.2"
+        },
+        {
+          "Fila": 22,
+          "Id": "20",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.7.3.a"
+        },
+        {
+          "Fila": 23,
+          "Id": "21",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.7.3.b"
+        },
+        {
+          "Fila": 24,
+          "Id": "22",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "11.2.1.b"
+        },
+        {
+          "Fila": 25,
+          "Id": "23",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "11.5.2.a"
+        },
+        {
+          "Fila": 26,
+          "Id": "24",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "11.5.2.b"
+        }
+      ]
+    },
+    {
+      "Pestana": "Criticidad 5",
+      "ColumnaAreaIndex": 9,
+      "ColumnaResponsableIndex": 10,
+      "ColumnaEstatusIndex": 15,
+      "TotalAbiertos": 29,
+      "TotalCerrados": 15,
+      "Total": 44,
+      "PorcentajeCerrado": 34.09,
+      "Areas": {
+        "Administracion de Seguridad": {
+          "Abiertos": 10,
+          "Cerrados": 15,
+          "Total": 25
+        },
+        "No aplica para Banesco": {
+          "Abiertos": 3,
+          "Cerrados": 0,
+          "Total": 3
+        },
+        "Seguridad Fisica": {
+          "Abiertos": 4,
+          "Cerrados": 0,
+          "Total": 4
+        },
+        "Seguridad Fisica/ Almacenamiento": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Seguridad Fisica/ Ingenieria de Seguridad": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Seguridad Fisica/ Centro de Serv. Operaciones": {
+          "Abiertos": 5,
+          "Cerrados": 0,
+          "Total": 5
+        },
+        "Seguridad Fisica/ Almacenamiento/ Centro de Serv. Operaciones": {
+          "Abiertos": 3,
+          "Cerrados": 0,
+          "Total": 3
+        }
+      },
+      "Responsables": {
+        "Alexis Guevara": {
+          "Abiertos": 10,
+          "Cerrados": 15,
+          "Total": 25
+        },
+        "No aplica para Banesco": {
+          "Abiertos": 3,
+          "Cerrados": 0,
+          "Total": 3
+        },
+        "Aurelio Gomez / Carla Bastidas": {
+          "Abiertos": 4,
+          "Cerrados": 0,
+          "Total": 4
+        },
+        "Aurelio Gomez / Carla Bastidas/ Alceides Perz": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Aurelio Gomez / Carla Bastidas/ Yairzuri Castillo": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Aurelio Gomez / Carla Bastidas/ De Caro Alfonso": {
+          "Abiertos": 5,
+          "Cerrados": 0,
+          "Total": 5
+        },
+        "Aurelio Gomez / Carla Bastidas/ Alcedes Perez/ De Caro Alfonso": {
+          "Abiertos": 3,
+          "Cerrados": 0,
+          "Total": 3
+        }
+      },
+      "Items": [
+        {
+          "Fila": 3,
+          "Id": "1",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.5.1.a"
+        },
+        {
+          "Fila": 4,
+          "Id": "2",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.5.1.b"
+        },
+        {
+          "Fila": 5,
+          "Id": "3",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.5.1.c"
+        },
+        {
+          "Fila": 6,
+          "Id": "4",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.5.1.3.a"
+        },
+        {
+          "Fila": 7,
+          "Id": "5",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.5.1.3.b"
+        },
+        {
+          "Fila": 8,
+          "Id": "6",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.6.1"
+        },
+        {
+          "Fila": 9,
+          "Id": "7",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.6.1.2.a"
+        },
+        {
+          "Fila": 10,
+          "Id": "8",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.6.1.2.b"
+        },
+        {
+          "Fila": 11,
+          "Id": "9",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.6.1.2.c"
+        },
+        {
+          "Fila": 12,
+          "Id": "10",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.6.1.3"
+        },
+        {
+          "Fila": 13,
+          "Id": "11",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.6.1.4"
+        },
+        {
+          "Fila": 14,
+          "Id": "12",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.7.1.a"
+        },
+        {
+          "Fila": 15,
+          "Id": "13",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.7.1.b"
+        },
+        {
+          "Fila": 16,
+          "Id": "14",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.7.2.a"
+        },
+        {
+          "Fila": 17,
+          "Id": "15",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.7.2.b"
+        },
+        {
+          "Fila": 18,
+          "Id": "16",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.7.3.a"
+        },
+        {
+          "Fila": 19,
+          "Id": "17",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.7.3.b"
+        },
+        {
+          "Fila": 20,
+          "Id": "18",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.7.4.a"
+        },
+        {
+          "Fila": 21,
+          "Id": "19",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.7.4.b"
+        },
+        {
+          "Fila": 22,
+          "Id": "20",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.7.5.a"
+        },
+        {
+          "Fila": 23,
+          "Id": "21",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.7.5.b"
+        },
+        {
+          "Fila": 24,
+          "Id": "22",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.7.6.a"
+        },
+        {
+          "Fila": 25,
+          "Id": "23",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.7.6.b"
+        },
+        {
+          "Fila": 26,
+          "Id": "24",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.7.7.a"
+        },
+        {
+          "Fila": 27,
+          "Id": "25",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.7.7.b"
+        },
+        {
+          "Fila": 28,
+          "Id": "26",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.7.8.a"
+        },
+        {
+          "Fila": 29,
+          "Id": "27",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Cerrado",
+          "EstatusNormalizado": "Cerrado",
+          "Detalle": "3.7.8.b"
+        },
+        {
+          "Fila": 30,
+          "Id": "28",
+          "Area": "No aplica para Banesco",
+          "Responsable": "No aplica para Banesco",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.7.9"
+        },
+        {
+          "Fila": 31,
+          "Id": "29",
+          "Area": "Seguridad Fisica",
+          "Responsable": "Aurelio Gomez / Carla Bastidas",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.3.3"
+        },
+        {
+          "Fila": 32,
+          "Id": "30",
+          "Area": "Seguridad Fisica",
+          "Responsable": "Aurelio Gomez / Carla Bastidas",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.3.4.a"
+        },
+        {
+          "Fila": 33,
+          "Id": "31",
+          "Area": "Seguridad Fisica",
+          "Responsable": "Aurelio Gomez / Carla Bastidas",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.3.4.b"
+        },
+        {
+          "Fila": 34,
+          "Id": "32",
+          "Area": "Seguridad Fisica",
+          "Responsable": "Aurelio Gomez / Carla Bastidas",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.1"
+        },
+        {
+          "Fila": 35,
+          "Id": "33",
+          "Area": "Seguridad Fisica/ Almacenamiento",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ Alceides Perz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.1.1.a"
+        },
+        {
+          "Fila": 36,
+          "Id": "34",
+          "Area": "Seguridad Fisica/ Almacenamiento",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ Alceides Perz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.1.1.b"
+        },
+        {
+          "Fila": 37,
+          "Id": "35",
+          "Area": "Seguridad Fisica/ Ingenieria de Seguridad",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.2.a"
+        },
+        {
+          "Fila": 38,
+          "Id": "36",
+          "Area": "Seguridad Fisica/ Ingenieria de Seguridad",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.2.b"
+        },
+        {
+          "Fila": 39,
+          "Id": "37",
+          "Area": "Seguridad Fisica/ Centro de Serv. Operaciones",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ De Caro Alfonso",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.3.a"
+        },
+        {
+          "Fila": 40,
+          "Id": "38",
+          "Area": "Seguridad Fisica/ Centro de Serv. Operaciones",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ De Caro Alfonso",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.3.b"
+        },
+        {
+          "Fila": 41,
+          "Id": "39",
+          "Area": "Seguridad Fisica/ Centro de Serv. Operaciones",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ De Caro Alfonso",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.3.c"
+        },
+        {
+          "Fila": 42,
+          "Id": "40",
+          "Area": "Seguridad Fisica/ Centro de Serv. Operaciones",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ De Caro Alfonso",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.4.a"
+        },
+        {
+          "Fila": 43,
+          "Id": "41",
+          "Area": "Seguridad Fisica/ Centro de Serv. Operaciones",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ De Caro Alfonso",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.4.b"
+        },
+        {
+          "Fila": 44,
+          "Id": "42",
+          "Area": "Seguridad Fisica/ Almacenamiento/ Centro de Serv. Operaciones",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ Alcedes Perez/ De Caro Alfonso",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.5.a"
+        },
+        {
+          "Fila": 45,
+          "Id": "43",
+          "Area": "Seguridad Fisica/ Almacenamiento/ Centro de Serv. Operaciones",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ Alcedes Perez/ De Caro Alfonso",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.5.b"
+        },
+        {
+          "Fila": 46,
+          "Id": "44",
+          "Area": "Seguridad Fisica/ Almacenamiento/ Centro de Serv. Operaciones",
+          "Responsable": "Aurelio Gomez / Carla Bastidas/ Alcedes Perez/ De Caro Alfonso",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.4.5.1.b"
+        }
+      ]
+    },
+    {
+      "Pestana": "Criticidad 6",
+      "ColumnaAreaIndex": 5,
+      "ColumnaResponsableIndex": 9,
+      "ColumnaEstatusIndex": 14,
+      "TotalAbiertos": 63,
+      "TotalCerrados": 0,
+      "Total": 63,
+      "PorcentajeCerrado": 0,
+      "Areas": {
+        "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI / Ciberseguridad / Ingeniería de Seguridad": {
+          "Abiertos": 3,
+          "Cerrados": 0,
+          "Total": 3
+        },
+        "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI/ Ciberseguridad": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Ciberseguridad / Telec. e Infraest. TI": {
+          "Abiertos": 3,
+          "Cerrados": 0,
+          "Total": 3
+        },
+        "Ingeniería de Seguridad/Ciberseguridad": {
+          "Abiertos": 3,
+          "Cerrados": 0,
+          "Total": 3
+        },
+        "Administración de Seguridad": {
+          "Abiertos": 8,
+          "Cerrados": 0,
+          "Total": 8
+        },
+        "Administracion de Seguridad": {
+          "Abiertos": 4,
+          "Cerrados": 0,
+          "Total": 4
+        },
+        "Cibeseguridad": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Gerencia de Ciberseguridad": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI/ Ciberseguridad / Gcia Ingenieria de Seguridad": {
+          "Abiertos": 5,
+          "Cerrados": 0,
+          "Total": 5
+        },
+        "Control de Perdidas/ Centro de Servicio de Operaciones": {
+          "Abiertos": 3,
+          "Cerrados": 0,
+          "Total": 3
+        },
+        "Ciberseguridad": {
+          "Abiertos": 5,
+          "Cerrados": 0,
+          "Total": 5
+        },
+        "Control Normativo de Seguridad": {
+          "Abiertos": 10,
+          "Cerrados": 0,
+          "Total": 10
+        },
+        "Gcia. Arquitectura Empresarial y Capac./ Gcia. de Soporte a Campo/ Gcia Ingenieria de Seguridad": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Gcia. Ejec. Continuidad de Negocio": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Capital Humano": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Ingenieria de Seguridad / Gcia. Desarrollo de Talento": {
+          "Abiertos": 8,
+          "Cerrados": 0,
+          "Total": 8
+        },
+        "Seguridad Fisica/ Capital Humano/ Gcia Adquisición y Movilidad de Talento": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        }
+      },
+      "Responsables": {
+        "Angela Useche / Rene Ortega / Yairzuri Castillo / indelver Mogollon": {
+          "Abiertos": 3,
+          "Cerrados": 0,
+          "Total": 3
+        },
+        "Angela Useche/ Rene Ortega": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Angela Useche/ Rene Ortega/ Hindelver Mogollon": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Hindelver Mogollon / Rene Ortega": {
+          "Abiertos": 4,
+          "Cerrados": 0,
+          "Total": 4
+        },
+        "Yairzuri Castillo /Hindelver Mogollón": {
+          "Abiertos": 3,
+          "Cerrados": 0,
+          "Total": 3
+        },
+        "Alexis Guevara": {
+          "Abiertos": 12,
+          "Cerrados": 0,
+          "Total": 12
+        },
+        "Hindelver Mogollón": {
+          "Abiertos": 7,
+          "Cerrados": 0,
+          "Total": 7
+        },
+        "\"Angela Useche/ Rene Ortega/Hindelver Mogollón/ Yairzuri Castillo": {
+          "Abiertos": 5,
+          "Cerrados": 0,
+          "Total": 5
+        },
+        "Carla Bastidas/Julio Dávila": {
+          "Abiertos": 3,
+          "Cerrados": 0,
+          "Total": 3
+        },
+        "Marlene Ortiz": {
+          "Abiertos": 10,
+          "Cerrados": 0,
+          "Total": 10
+        },
+        "Carolina Zaragoza/ Salomon Oliveira/ Yairzuri Castillo": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Carlos Molina": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        },
+        "Barbara Vallejos/ Yesenia Morales": {
+          "Abiertos": 2,
+          "Cerrados": 0,
+          "Total": 2
+        },
+        "Yairzuri Castillo / Andreska Mata": {
+          "Abiertos": 8,
+          "Cerrados": 0,
+          "Total": 8
+        },
+        "Aurelio Gomez / Carla Bastidas / Gcia Adquisición y Movilidad de Talento": {
+          "Abiertos": 1,
+          "Cerrados": 0,
+          "Total": 1
+        }
+      },
+      "Items": [
+        {
+          "Fila": 3,
+          "Id": "6",
+          "Area": "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI / Ciberseguridad / Ingeniería de Seguridad",
+          "Responsable": "Angela Useche / Rene Ortega / Yairzuri Castillo / indelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.1.1 Todas las políticas de seguridad y los procedimientos operativos que se identifican ..."
+        },
+        {
+          "Fila": 4,
+          "Id": "6",
+          "Area": "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI / Ciberseguridad / Ingeniería de Seguridad",
+          "Responsable": "Angela Useche / Rene Ortega / Yairzuri Castillo / indelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.1.2 Los roles y responsabilidades para realizar las actividades del Requisito 1 están do..."
+        },
+        {
+          "Fila": 5,
+          "Id": "6",
+          "Area": "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI / Ciberseguridad / Ingeniería de Seguridad",
+          "Responsable": "Angela Useche / Rene Ortega / Yairzuri Castillo / indelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.1.2.b Entreviste al personal responsable de realizar las actividades del Requisito 1 par..."
+        },
+        {
+          "Fila": 6,
+          "Id": "6",
+          "Area": "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI",
+          "Responsable": "Angela Useche/ Rene Ortega",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.2.2 Todos los cambios en las conexiones de red y en las configuraciones de los NSC se ap..."
+        },
+        {
+          "Fila": 7,
+          "Id": "6",
+          "Area": "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI/ Ciberseguridad",
+          "Responsable": "Angela Useche/ Rene Ortega/ Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.2.2.b Evalúe los parámetros de configuración de la red para identificar los cambios real..."
+        },
+        {
+          "Fila": 8,
+          "Id": "6",
+          "Area": "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI/ Ciberseguridad",
+          "Responsable": "Angela Useche/ Rene Ortega/ Hindelver Mogollon",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.2.2.c Evalúe los parámetros de configuración de la red para identificar los cambios real..."
+        },
+        {
+          "Fila": 9,
+          "Id": "6",
+          "Area": "Ciberseguridad / Telec. e Infraest. TI",
+          "Responsable": "Hindelver Mogollon / Rene Ortega",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.2.7 Las configuraciones de los NSC se revisan al menos una vez cada seis meses para conf..."
+        },
+        {
+          "Fila": 10,
+          "Id": "6",
+          "Area": "Ciberseguridad / Telec. e Infraest. TI",
+          "Responsable": "Hindelver Mogollon / Rene Ortega",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.2.7.b Evalúe la documentación de las revisiones de las configuraciones de los NSC y entr..."
+        },
+        {
+          "Fila": 11,
+          "Id": "6",
+          "Area": "Ciberseguridad / Telec. e Infraest. TI",
+          "Responsable": "Hindelver Mogollon / Rene Ortega",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "1.2.7.c Evalúe las configuraciones para los NSC para verificar que las configuraciones ide..."
+        },
+        {
+          "Fila": 12,
+          "Id": "6",
+          "Area": "Ingeniería de Seguridad/Ciberseguridad",
+          "Responsable": "Yairzuri Castillo /Hindelver Mogollón",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.1.1 Todas las políticas de seguridad y los procedimientos operativos que se identifican ..."
+        },
+        {
+          "Fila": 13,
+          "Id": "6",
+          "Area": "Ingeniería de Seguridad/Ciberseguridad",
+          "Responsable": "Yairzuri Castillo /Hindelver Mogollón",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.1.2 Los roles y responsabilidades para realizar las actividades del Requisito 2 son docu..."
+        },
+        {
+          "Fila": 14,
+          "Id": "6",
+          "Area": "Ingeniería de Seguridad/Ciberseguridad",
+          "Responsable": "Yairzuri Castillo /Hindelver Mogollón",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "2.1.2.b Entreviste al personal responsable de realizar las actividades del Requisito 2 par..."
+        },
+        {
+          "Fila": 15,
+          "Id": "6",
+          "Area": "Administración de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.1.1 Todas las políticas de seguridad y procedimientos operativos que se identifican en e..."
+        },
+        {
+          "Fila": 16,
+          "Id": "6",
+          "Area": "Administración de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.1.2 Los roles y responsabilidades para realizar las actividades del Requisito 3 están do..."
+        },
+        {
+          "Fila": 17,
+          "Id": "6",
+          "Area": "Administración de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "3.1.2.b Entreviste al personal responsable de desarrollar las actividades del Requisito 3 ..."
+        },
+        {
+          "Fila": 18,
+          "Id": "6",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "4.1.1 Todas las políticas de seguridad y procedimientos operativos que se identifican en e..."
+        },
+        {
+          "Fila": 19,
+          "Id": "6",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "4.1.2 Los roles y responsabilidades para realizar las actividades del Requisito 4 están do..."
+        },
+        {
+          "Fila": 20,
+          "Id": "6",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "4.1.2.b Entreviste al personal responsable de desarrollar las actividades del Requisito 4 ..."
+        },
+        {
+          "Fila": 21,
+          "Id": "6",
+          "Area": "Cibeseguridad",
+          "Responsable": "Hindelver Mogollon / Rene Ortega",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "5.1.1 Todas las políticas de seguridad y procedimientos operativos que se identifican en e..."
+        },
+        {
+          "Fila": 22,
+          "Id": "6",
+          "Area": "Gerencia de Ciberseguridad",
+          "Responsable": "Hindelver Mogollón",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "5.1.2 Los roles y responsabilidades para realizar las actividades del Requisito 5 están do..."
+        },
+        {
+          "Fila": 23,
+          "Id": "6",
+          "Area": "Gerencia de Ciberseguridad",
+          "Responsable": "Hindelver Mogollón",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "5.1.2.b Entreviste al personal responsable de desarrollar las actividades del Requisito 5 ..."
+        },
+        {
+          "Fila": 24,
+          "Id": "6",
+          "Area": "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI/ Ciberseguridad / Gcia Ingenieria de Seguridad",
+          "Responsable": "\"Angela Useche/ Rene Ortega/Hindelver Mogollón/ Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.1.1 Todas las políticas de\n  seguridad y procedimientos operativos que se identifican en..."
+        },
+        {
+          "Fila": 25,
+          "Id": "6",
+          "Area": "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI/ Ciberseguridad / Gcia Ingenieria de Seguridad",
+          "Responsable": "\"Angela Useche/ Rene Ortega/Hindelver Mogollón/ Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.1.2 Los roles y responsabilidades para realizar las actividades del Requisito 6 están do..."
+        },
+        {
+          "Fila": 26,
+          "Id": "6",
+          "Area": "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI/ Ciberseguridad / Gcia Ingenieria de Seguridad",
+          "Responsable": "\"Angela Useche/ Rene Ortega/Hindelver Mogollón/ Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.1.2.b Entreviste al personal responsable de realizar las actividades del Requisito 6 par..."
+        },
+        {
+          "Fila": 27,
+          "Id": "6",
+          "Area": "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI/ Ciberseguridad / Gcia Ingenieria de Seguridad",
+          "Responsable": "\"Angela Useche/ Rene Ortega/Hindelver Mogollón/ Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.5.1 Los cambios en todos los componentes del sistema en el entorno de producción se real..."
+        },
+        {
+          "Fila": 28,
+          "Id": "6",
+          "Area": "Gcia. Habilitacion de Operaciones / Telec. e Infraest. TI/ Ciberseguridad / Gcia Ingenieria de Seguridad",
+          "Responsable": "\"Angela Useche/ Rene Ortega/Hindelver Mogollón/ Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "6.5.1.b Evalúe los cambios recientes a los componentes del sistema y rastrear esos cambios..."
+        },
+        {
+          "Fila": 29,
+          "Id": "6",
+          "Area": "Administración de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "7.1.1 Todas las políticas de seguridad y procedimientos operativos que se identifican en e..."
+        },
+        {
+          "Fila": 30,
+          "Id": "6",
+          "Area": "Administración de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "7.1.2.b Entreviste al personal responsable de desarrollar las actividades del Requisito 7 ..."
+        },
+        {
+          "Fila": 31,
+          "Id": "6",
+          "Area": "Administración de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "8.1.1 Todas las políticas de seguridad y procedimientos operativos que se identifican en e..."
+        },
+        {
+          "Fila": 32,
+          "Id": "6",
+          "Area": "Administración de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "8.1.2 Los roles y responsabilidades para realizar las actividades del Requisito 8 están do..."
+        },
+        {
+          "Fila": 33,
+          "Id": "6",
+          "Area": "Administración de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "8.1.2.b Entreviste al personal responsable de desarrollar las actividades del Requisito 8 ..."
+        },
+        {
+          "Fila": 34,
+          "Id": "6",
+          "Area": "Control de Perdidas/ Centro de Servicio de Operaciones",
+          "Responsable": "Carla Bastidas/Julio Dávila",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.1.1 Todas las políticas de seguridad y procedimientos operativos que se identifican en e..."
+        },
+        {
+          "Fila": 35,
+          "Id": "6",
+          "Area": "Control de Perdidas/ Centro de Servicio de Operaciones",
+          "Responsable": "Carla Bastidas/Julio Dávila",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.1.2 Los roles y responsabilidades para realizar las actividades del Requisito 9 están do..."
+        },
+        {
+          "Fila": 36,
+          "Id": "6",
+          "Area": "Control de Perdidas/ Centro de Servicio de Operaciones",
+          "Responsable": "Carla Bastidas/Julio Dávila",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "9.1.2.b Entreviste al personal responsable de desarrollar las actividades del Requisito 9 ..."
+        },
+        {
+          "Fila": 37,
+          "Id": "6",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollón",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.1.1 Todas las políticas de seguridad y procedimientos operativos que se identifican en ..."
+        },
+        {
+          "Fila": 38,
+          "Id": "6",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollón",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "10.1.2 Los roles y responsabilidades para realizar las actividades del Requisito 10 están ..."
+        },
+        {
+          "Fila": 39,
+          "Id": "6",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollón",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "11.1.1 Todas las políticas de seguridad y procedimientos operativos que se identifican en ..."
+        },
+        {
+          "Fila": 40,
+          "Id": "6",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollón",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "11.1.2 Los roles y responsabilidades para realizar las actividades del Requisito 11 son do..."
+        },
+        {
+          "Fila": 41,
+          "Id": "6",
+          "Area": "Ciberseguridad",
+          "Responsable": "Hindelver Mogollón",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "11.1.2.b Entreviste al personal responsable de desarrollar las actividades del Requisito 1..."
+        },
+        {
+          "Fila": 42,
+          "Id": "6",
+          "Area": "Control Normativo de Seguridad",
+          "Responsable": "Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.1.1 Una política general de seguridad de la información es:\n - Establecida.\n - Publicad..."
+        },
+        {
+          "Fila": 43,
+          "Id": "6",
+          "Area": "Control Normativo de Seguridad",
+          "Responsable": "Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.1.2 La política de seguridad de la información es:\n - Revisada al menos una vez cada 12..."
+        },
+        {
+          "Fila": 44,
+          "Id": "6",
+          "Area": "Control Normativo de Seguridad",
+          "Responsable": "Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.1.3 La política de seguridad define claramente los roles y responsabilidades de segurid..."
+        },
+        {
+          "Fila": 45,
+          "Id": "6",
+          "Area": "Control Normativo de Seguridad",
+          "Responsable": "Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.1.3.b Entrevistar al personal en varias funciones para verificar que comprenden sus res..."
+        },
+        {
+          "Fila": 46,
+          "Id": "6",
+          "Area": "Control Normativo de Seguridad",
+          "Responsable": "Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.1.3.c Evalúela evidencia documentada para verificar que el personal reconozca sus respo..."
+        },
+        {
+          "Fila": 47,
+          "Id": "6",
+          "Area": "Control Normativo de Seguridad",
+          "Responsable": "Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.1.4 La responsabilidad de la seguridad de la información se asigna formalmente a un dir..."
+        },
+        {
+          "Fila": 48,
+          "Id": "6",
+          "Area": "Gcia. Arquitectura Empresarial y Capac./ Gcia. de Soporte a Campo/ Gcia Ingenieria de Seguridad",
+          "Responsable": "Carolina Zaragoza/ Salomon Oliveira/ Yairzuri Castillo",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.2.1 Se documentan e implementan políticas de uso aceptable para tecnologías orientadas ..."
+        },
+        {
+          "Fila": 49,
+          "Id": "6",
+          "Area": "Administracion de Seguridad",
+          "Responsable": "Alexis Guevara",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.3.3 Los protocolos y conjuntos de cifrado criptográfico en uso se documentan y revisan ..."
+        },
+        {
+          "Fila": 50,
+          "Id": "6",
+          "Area": "Gcia. Ejec. Continuidad de Negocio",
+          "Responsable": "Carlos Molina",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.3.4 Las tecnologías de hardware y software en uso se revisan al menos una vez cada 12 m..."
+        },
+        {
+          "Fila": 51,
+          "Id": "6",
+          "Area": "Control Normativo de Seguridad",
+          "Responsable": "Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.4.1 Requisito adicional solo para proveedores de servicios: La responsabilidad es estab..."
+        },
+        {
+          "Fila": 52,
+          "Id": "6",
+          "Area": "Control Normativo de Seguridad",
+          "Responsable": "Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.4.2 Requisito adicional solo para proveedores de servicios: Las revisiones se realizan ..."
+        },
+        {
+          "Fila": 53,
+          "Id": "6",
+          "Area": "Control Normativo de Seguridad",
+          "Responsable": "Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.4.2.b Procedimiento de prueba adicional solo para evaluaciones de proveedores de servic..."
+        },
+        {
+          "Fila": 54,
+          "Id": "6",
+          "Area": "Control Normativo de Seguridad",
+          "Responsable": "Marlene Ortiz",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.4.2.1 Requisito adicional solo para proveedores de servicios: Las revisiones realizadas..."
+        },
+        {
+          "Fila": 55,
+          "Id": "6",
+          "Area": "Capital Humano",
+          "Responsable": "Barbara Vallejos/ Yesenia Morales",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.5.3 Requisito adicional solo para proveedores de servicios: Los cambios significativos ..."
+        },
+        {
+          "Fila": 56,
+          "Id": "6",
+          "Area": "Capital Humano",
+          "Responsable": "Barbara Vallejos/ Yesenia Morales",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.5.3.b Procedimiento de prueba adicional solo para evaluaciones de proveedores de servic..."
+        },
+        {
+          "Fila": 57,
+          "Id": "6",
+          "Area": "Ingenieria de Seguridad / Gcia. Desarrollo de Talento",
+          "Responsable": "Yairzuri Castillo / Andreska Mata",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.6.1 Se implementa un programa formal de concientización sobre seguridad para que todo e..."
+        },
+        {
+          "Fila": 58,
+          "Id": "6",
+          "Area": "Ingenieria de Seguridad / Gcia. Desarrollo de Talento",
+          "Responsable": "Yairzuri Castillo / Andreska Mata",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.6.2 El programa de concientización sobre seguridad es:\n - Revisado al menos una vez cad..."
+        },
+        {
+          "Fila": 59,
+          "Id": "6",
+          "Area": "Ingenieria de Seguridad / Gcia. Desarrollo de Talento",
+          "Responsable": "Yairzuri Castillo / Andreska Mata",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.6.3 El personal recibe capacitación sobre seguridad de la siguiente manera:\n - Al momen..."
+        },
+        {
+          "Fila": 60,
+          "Id": "6",
+          "Area": "Ingenieria de Seguridad / Gcia. Desarrollo de Talento",
+          "Responsable": "Yairzuri Castillo / Andreska Mata",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.6.3.b Evalúe los materiales del programa de concientización sobre seguridad para verifi..."
+        },
+        {
+          "Fila": 61,
+          "Id": "6",
+          "Area": "Ingenieria de Seguridad / Gcia. Desarrollo de Talento",
+          "Responsable": "Yairzuri Castillo / Andreska Mata",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.6.3.c Entreviste al personal para verificar que hayan completado la capacitación de con..."
+        },
+        {
+          "Fila": 62,
+          "Id": "6",
+          "Area": "Ingenieria de Seguridad / Gcia. Desarrollo de Talento",
+          "Responsable": "Yairzuri Castillo / Andreska Mata",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.6.3.d Evalúe los materiales del programa de concientización sobre seguridad y los recon..."
+        },
+        {
+          "Fila": 63,
+          "Id": "6",
+          "Area": "Ingenieria de Seguridad / Gcia. Desarrollo de Talento",
+          "Responsable": "Yairzuri Castillo / Andreska Mata",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.6.3.1 El entrenamiento de concientización de seguridad incluye la concientización ante ..."
+        },
+        {
+          "Fila": 64,
+          "Id": "6",
+          "Area": "Ingenieria de Seguridad / Gcia. Desarrollo de Talento",
+          "Responsable": "Yairzuri Castillo / Andreska Mata",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.6.3.2 La capacitación en concientización sobre seguridad incluye la concientización sob..."
+        },
+        {
+          "Fila": 65,
+          "Id": "6",
+          "Area": "Seguridad Fisica/ Capital Humano/ Gcia Adquisición y Movilidad de Talento",
+          "Responsable": "Aurelio Gomez / Carla Bastidas / Gcia Adquisición y Movilidad de Talento",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
+          "Detalle": "12.7.1 El personal potencial que tendrá acceso al CDE es investigado, en el marco de las l..."
+        }
+      ]
+    }
+  ]
+}
