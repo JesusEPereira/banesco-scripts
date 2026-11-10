@@ -1,11 +1,11 @@
 {
-  "ArchivoFuente": "C:\\Users\\jespereira\\Downloads\\_Clasificación de Actividades No Recurrentes V1.0.xlsx",
-  "FechaGeneracion": "2026-11-09 18:22:43",
+  "ArchivoFuente": "C:\\Users\\ba1in0jespereira\\Downloads\\_Clasificación de Actividades No Recurrentes V1.0.xlsx",
+  "FechaGeneracion": "2026-11-09 22:14:25",
   "TotalesGlobales": {
     "TotalItems": 313,
-    "TotalAbiertos": 187,
-    "TotalCerrados": 126,
-    "PorcentajeAvance": 40.26
+    "TotalAbiertos": 209,
+    "TotalCerrados": 104,
+    "PorcentajeAvance": 33.23
   },
   "ConsolidadoGlobalAreas": {
     "Canales": {
@@ -14,13 +14,13 @@
       "Total": 2
     },
     "No aplica para Banesco": {
-      "Abiertos": 5,
-      "Cerrados": 20,
+      "Abiertos": 25,
+      "Cerrados": 0,
       "Total": 25
     },
     "Ciberseguridad": {
-      "Abiertos": 34,
-      "Cerrados": 43,
+      "Abiertos": 35,
+      "Cerrados": 42,
       "Total": 77
     },
     "Administracion de Seguridad": {
@@ -74,8 +74,8 @@
       "Total": 11
     },
     "Ciberseguridad/ Desarrollo de Talento": {
-      "Abiertos": 0,
-      "Cerrados": 1,
+      "Abiertos": 1,
+      "Cerrados": 0,
       "Total": 1
     },
     "Seguridad Fisica/ Almacenamiento": {
@@ -170,10 +170,10 @@
       "ColumnaAreaIndex": 9,
       "ColumnaResponsableIndex": 10,
       "ColumnaEstatusIndex": 15,
-      "TotalAbiertos": 14,
-      "TotalCerrados": 45,
+      "TotalAbiertos": 27,
+      "TotalCerrados": 32,
       "Total": 59,
-      "PorcentajeCerrado": 76.27,
+      "PorcentajeCerrado": 54.24,
       "Areas": {
         "Canales": {
           "Abiertos": 0,
@@ -181,8 +181,8 @@
           "Total": 2
         },
         "No aplica para Banesco": {
-          "Abiertos": 0,
-          "Cerrados": 13,
+          "Abiertos": 13,
+          "Cerrados": 0,
           "Total": 13
         },
         "Ciberseguridad": {
@@ -223,8 +223,8 @@
           "Total": 1
         },
         "No aplica para Banesco": {
-          "Abiertos": 0,
-          "Cerrados": 13,
+          "Abiertos": 13,
+          "Cerrados": 0,
           "Total": 13
         },
         "Hindelver Mogollon/ Alexis Guevara": {
@@ -288,8 +288,8 @@
           "Id": "2",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "3.3.3.a"
         },
         {
@@ -297,8 +297,8 @@
           "Id": "3",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "3.3.3.b"
         },
         {
@@ -333,8 +333,8 @@
           "Id": "7",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "3.5.1.1.a"
         },
         {
@@ -342,8 +342,8 @@
           "Id": "8",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "3.5.1.1.b"
         },
         {
@@ -351,8 +351,8 @@
           "Id": "9",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "3.5.1.1.c"
         },
         {
@@ -360,8 +360,8 @@
           "Id": "10",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "3.5.1.1.d"
         },
         {
@@ -468,8 +468,8 @@
           "Id": "22",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "6.4.3.a"
         },
         {
@@ -477,8 +477,8 @@
           "Id": "23",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "6.4.3.b"
         },
         {
@@ -630,8 +630,8 @@
           "Id": "40",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "11.3.1.2.d"
         },
         {
@@ -639,8 +639,8 @@
           "Id": "41",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "11.4.7"
         },
         {
@@ -675,8 +675,8 @@
           "Id": "45",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "11.6.1.b"
         },
         {
@@ -684,8 +684,8 @@
           "Id": "46",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "11.6.1.c"
         },
         {
@@ -693,8 +693,8 @@
           "Id": "47",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "11.6.1.d"
         },
         {
@@ -812,10 +812,10 @@
       "ColumnaAreaIndex": 9,
       "ColumnaResponsableIndex": 10,
       "ColumnaEstatusIndex": 15,
-      "TotalAbiertos": 4,
-      "TotalCerrados": 6,
+      "TotalAbiertos": 7,
+      "TotalCerrados": 3,
       "Total": 10,
-      "PorcentajeCerrado": 60,
+      "PorcentajeCerrado": 30,
       "Areas": {
         "Administracion de Seguridad": {
           "Abiertos": 2,
@@ -823,8 +823,8 @@
           "Total": 5
         },
         "No aplica para Banesco": {
-          "Abiertos": 0,
-          "Cerrados": 3,
+          "Abiertos": 3,
+          "Cerrados": 0,
           "Total": 3
         },
         "Seguridad Fisica/ Centro de Serv. Operaciones": {
@@ -845,8 +845,8 @@
           "Total": 5
         },
         "No aplica para Banesco": {
-          "Abiertos": 0,
-          "Cerrados": 3,
+          "Abiertos": 3,
+          "Cerrados": 0,
           "Total": 3
         },
         "Aurelio Gomez / Carla Bastidas/ De Caro Alfonso": {
@@ -906,8 +906,8 @@
           "Id": "6",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "9.4.6.a"
         },
         {
@@ -915,8 +915,8 @@
           "Id": "7",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "9.4.6.b"
         },
         {
@@ -924,8 +924,8 @@
           "Id": "8",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "9.4.6.c"
         },
         {
@@ -953,10 +953,10 @@
       "ColumnaAreaIndex": 9,
       "ColumnaResponsableIndex": 10,
       "ColumnaEstatusIndex": 15,
-      "TotalAbiertos": 54,
-      "TotalCerrados": 43,
+      "TotalAbiertos": 60,
+      "TotalCerrados": 37,
       "Total": 97,
-      "PorcentajeCerrado": 44.33,
+      "PorcentajeCerrado": 38.14,
       "Areas": {
         "Ingenieria de Seguridad": {
           "Abiertos": 6,
@@ -964,8 +964,8 @@
           "Total": 8
         },
         "Ciberseguridad": {
-          "Abiertos": 12,
-          "Cerrados": 29,
+          "Abiertos": 13,
+          "Cerrados": 28,
           "Total": 41
         },
         "Administracion de Seguridad": {
@@ -979,8 +979,8 @@
           "Total": 1
         },
         "No aplica para Banesco": {
-          "Abiertos": 0,
-          "Cerrados": 4,
+          "Abiertos": 4,
+          "Cerrados": 0,
           "Total": 4
         },
         "Seguridad Fisica": {
@@ -999,8 +999,8 @@
           "Total": 11
         },
         "Ciberseguridad/ Desarrollo de Talento": {
-          "Abiertos": 0,
-          "Cerrados": 1,
+          "Abiertos": 1,
+          "Cerrados": 0,
           "Total": 1
         }
       },
@@ -1011,8 +1011,8 @@
           "Total": 8
         },
         "Hindelver Mogollon": {
-          "Abiertos": 10,
-          "Cerrados": 19,
+          "Abiertos": 11,
+          "Cerrados": 18,
           "Total": 29
         },
         "Rene Ortega / Hindelver Mogollon / Yairzuri Castillo": {
@@ -1031,8 +1031,8 @@
           "Total": 1
         },
         "No aplica para Banesco": {
-          "Abiertos": 0,
-          "Cerrados": 4,
+          "Abiertos": 4,
+          "Cerrados": 0,
           "Total": 4
         },
         "Hindelver Mogollon/Alexis Guevara": {
@@ -1061,8 +1061,8 @@
           "Total": 11
         },
         "Hindelver Mogollon/ Marianela Luzardo": {
-          "Abiertos": 0,
-          "Cerrados": 1,
+          "Abiertos": 1,
+          "Cerrados": 0,
           "Total": 1
         }
       },
@@ -1396,8 +1396,8 @@
           "Id": "37",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "2.3.1.a"
         },
         {
@@ -1405,8 +1405,8 @@
           "Id": "38",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "2.3.1.b"
         },
         {
@@ -1414,8 +1414,8 @@
           "Id": "39",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "2.3.1.c"
         },
         {
@@ -1423,8 +1423,8 @@
           "Id": "40",
           "Area": "No aplica para Banesco",
           "Responsable": "No aplica para Banesco",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "No Aplica",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "2.3.2"
         },
         {
@@ -1909,8 +1909,8 @@
           "Id": "94",
           "Area": "Ciberseguridad",
           "Responsable": "Hindelver Mogollon",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "12.10.3"
         },
         {
@@ -1918,8 +1918,8 @@
           "Id": "95",
           "Area": "Ciberseguridad/ Desarrollo de Talento",
           "Responsable": "Hindelver Mogollon/ Marianela Luzardo",
-          "EstatusBanco": "Cerrado",
-          "EstatusNormalizado": "Cerrado",
+          "EstatusBanco": "Abierto",
+          "EstatusNormalizado": "Abierto",
           "Detalle": "12.10.4"
         },
         {
