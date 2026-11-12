@@ -1,4 +1,4 @@
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+﻿[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8
 
 $DocPath1 = "d:\WKESPEREIRA\D\Scripts\INFORME_TECNICO_PCI_DSS_IBM_i_AIX_REQ_8.3.6.docx"
