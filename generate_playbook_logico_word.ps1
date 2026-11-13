@@ -10,16 +10,16 @@ $DocPath1 = "d:\WKESPEREIRA\D\Scripts\Playbook_Exposicion_Llave_Criptografica_Lo
 $DocPath2 = "c:\Users\jespereira\Downloads\Playbook_Exposicion_Llave_Criptografica_Logica.docx"
 
 # Paleta cromática oficial Banesco (Valores BGR para Word COM: R + G*256 + B*65536)
-$cAzulBanesco  = 20 + (59 * 256) + (100 * 65536)     # #143B64
-$cAzulHeader   = 79 + (129 * 256) + (189 * 65536)    # #4F81BD (Encabezados de tabla estilo PDF)
+$cAzulBanesco = 20 + (59 * 256) + (100 * 65536)     # #143B64
+$cAzulHeader = 79 + (129 * 256) + (189 * 65536)    # #4F81BD (Encabezados de tabla estilo PDF)
 $cVerdeBanesco = 8 + (84 * 256) + (60 * 65536)       # #08543C
-$cTextoOscuro  = 40 + (40 * 256) + (40 * 65536)       # #282828
-$cBlanco       = 16777215                             # #FFFFFF
-$cGrisClaro    = 242 + (244 * 256) + (246 * 65536)    # #F2F4F6
-$cGrisBorde    = 180 + (190 * 256) + (205 * 65536)    # #B4BECD
-$cRojoAlerta   = 237 + (28 * 256) + (36 * 65536)      # Rojo Nivel 1
-$cAmarillo     = 255 + (192 * 256) + (0 * 65536)      # Amarillo Nivel 2
-$cVerdeNivel   = 146 + (208 * 256) + (80 * 65536)     # Verde Nivel 3
+$cTextoOscuro = 40 + (40 * 256) + (40 * 65536)       # #282828
+$cBlanco = 16777215                             # #FFFFFF
+$cGrisClaro = 242 + (244 * 256) + (246 * 65536)    # #F2F4F6
+$cGrisBorde = 180 + (190 * 256) + (205 * 65536)    # #B4BECD
+$cRojoAlerta = 237 + (28 * 256) + (36 * 65536)      # Rojo Nivel 1
+$cAmarillo = 255 + (192 * 256) + (0 * 65536)      # Amarillo Nivel 2
+$cVerdeNivel = 146 + (208 * 256) + (80 * 65536)     # Verde Nivel 3
 
 Write-Host "[INFO] Iniciando Word COM Object..." -ForegroundColor Cyan
 $Word = New-Object -ComObject Word.Application
@@ -30,10 +30,10 @@ try {
     $Doc = $Word.Documents.Add()
 
     # Configuración de márgenes estándar (2.2 cm superior/inferior, 2.5 cm laterales)
-    $Doc.PageSetup.TopMargin    = 62.36
+    $Doc.PageSetup.TopMargin = 62.36
     $Doc.PageSetup.BottomMargin = 62.36
-    $Doc.PageSetup.LeftMargin   = 70.85
-    $Doc.PageSetup.RightMargin  = 70.85
+    $Doc.PageSetup.LeftMargin = 70.85
+    $Doc.PageSetup.RightMargin = 70.85
 
     # Encabezado y Pie de página
     $Header = $Doc.Sections.Item(1).Headers.Item(1)
@@ -223,7 +223,7 @@ try {
     $tImp.Rows.Item(1).HeadingFormat = -1
     $tImp.Cell(1, 1).Range.Text = "Clasificación"
     $tImp.Cell(1, 2).Range.Text = "Definición"
-    for ($c=1; $c -le 2; $c++) {
+    for ($c = 1; $c -le 2; $c++) {
         $cell = $tImp.Cell(1, $c)
         $cell.Shading.BackgroundPatternColor = $cAzulHeader
         $cell.Range.Font.Bold = 1
@@ -259,7 +259,7 @@ try {
 
     $tAlc.Cell(1, 1).Range.Text = "Clasificación"
     $tAlc.Cell(1, 2).Range.Text = "Definición"
-    for ($c=1; $c -le 2; $c++) {
+    for ($c = 1; $c -le 2; $c++) {
         $cell = $tAlc.Cell(1, $c)
         $cell.Shading.BackgroundPatternColor = $cAzulHeader
         $cell.Range.Font.Bold = 1
@@ -297,7 +297,7 @@ try {
     $tMat.Cell(1, 2).Range.Text = "Alto"
     $tMat.Cell(1, 3).Range.Text = "Medio"
     $tMat.Cell(1, 4).Range.Text = "Bajo"
-    for ($c=1; $c -le 4; $c++) {
+    for ($c = 1; $c -le 4; $c++) {
         $cell = $tMat.Cell(1, $c)
         $cell.Shading.BackgroundPatternColor = $cAzulHeader
         $cell.Range.Font.Bold = 1
@@ -356,7 +356,7 @@ try {
     $tEsc.Cell(1, 1).Range.Text = "Protocolo de Escalamiento"
     $tEsc.Cell(1, 2).Range.Text = "Criterio"
     $tEsc.Cell(1, 3).Range.Text = "Partes Interesadas"
-    for ($c=1; $c -le 3; $c++) {
+    for ($c = 1; $c -le 3; $c++) {
         $cell = $tEsc.Cell(1, $c)
         $cell.Shading.BackgroundPatternColor = $cAzulHeader
         $cell.Range.Font.Bold = 1
@@ -442,7 +442,7 @@ try {
         $t.Cell(1, 2).Range.Text = "Descripción"
         $t.Cell(1, 3).Range.Text = "Preguntas"
         $t.Cell(1, 4).Range.Text = "Acción"
-        for ($c=1; $c -le 4; $c++) {
+        for ($c = 1; $c -le 4; $c++) {
             $cell = $t.Cell(1, $c)
             $cell.Shading.BackgroundPatternColor = $cAzulHeader
             $cell.Range.Font.Bold = 1
@@ -450,7 +450,7 @@ try {
             $cell.Range.Font.Size = 9
         }
 
-        for ($r=0; $r -lt $RowsData.Count; $r++) {
+        for ($r = 0; $r -lt $RowsData.Count; $r++) {
             $currRow = $t.Rows.Item($r + 2)
             $currRow.Cells.Item(1).Range.Text = $RowsData[$r][0]
             $currRow.Cells.Item(1).Range.Font.Bold = 1
@@ -636,7 +636,7 @@ try {
     $tApr.Cell(1, 1).Range.Text = "Elaborado por:"
     $tApr.Cell(1, 2).Range.Text = "Revisado por:"
     $tApr.Cell(1, 3).Range.Text = "Aprobado por:"
-    for ($c=1; $c -le 3; $c++) {
+    for ($c = 1; $c -le 3; $c++) {
         $cell = $tApr.Cell(1, $c)
         $cell.Shading.BackgroundPatternColor = $cAzulHeader
         $cell.Range.Font.Bold = 1
@@ -647,7 +647,7 @@ try {
     $tApr.Cell(2, 1).Range.Text = "Carmen Anseume`r`nConsultor Netready / Auditor Ciberseguridad"
     $tApr.Cell(2, 2).Range.Text = "Hindelver Mogollon`r`nGerente de Ciberseguridad"
     $tApr.Cell(2, 3).Range.Text = "Jesus Irausquin`r`nVP Seguridad Integral de la Información y Datos"
-    for ($c=1; $c -le 3; $c++) {
+    for ($c = 1; $c -le 3; $c++) {
         $tApr.Cell(2, $c).Range.Font.Size = 9
         $tApr.Cell(2, $c).Range.ParagraphFormat.Alignment = 1
     }
@@ -655,7 +655,7 @@ try {
     $tApr.Cell(3, 1).Range.Text = "Fecha: 12/11/2026"
     $tApr.Cell(3, 2).Range.Text = "Fecha: 12/11/2026"
     $tApr.Cell(3, 3).Range.Text = "Fecha: 12/11/2026"
-    for ($c=1; $c -le 3; $c++) {
+    for ($c = 1; $c -le 3; $c++) {
         $tApr.Cell(3, $c).Range.Font.Size = 9
         $tApr.Cell(3, $c).Range.Font.Bold = 1
         $tApr.Cell(3, $c).Range.ParagraphFormat.Alignment = 1
@@ -688,7 +688,7 @@ try {
     $tInv.Cell(1, 5).Range.Text = "Viabilidad (Tendencia)"
     $tInv.Cell(1, 6).Range.Text = "Revisión (12 Meses)"
 
-    for ($c=1; $c -le 6; $c++) {
+    for ($c = 1; $c -le 6; $c++) {
         $cell = $tInv.Cell(1, $c)
         $cell.Shading.BackgroundPatternColor = $cAzulHeader
         $cell.Range.Font.Bold = 1
@@ -704,8 +704,8 @@ try {
         @("WAF-GW-EXT`r`n(Banca Digital)", "DMZ Perimetral`r`nReverse Proxy", "Cifrado en tránsito para transacciones web y móviles", "TLS 1.3 / TLS_AES_256_GCM_SHA384`r`n(TLS 1.0/1.1 deshabilitados)", "Excelente viabilidad`r`nSin suites obsoletas", "12/11/2026`r`n[Conforme]")
     )
 
-    for ($r=0; $r -lt $invRows.Count; $r++) {
-        for ($c=0; $c -lt 6; $c++) {
+    for ($r = 0; $r -lt $invRows.Count; $r++) {
+        for ($c = 0; $c -lt 6; $c++) {
             $tInv.Cell($r + 2, $c + 1).Range.Text = $invRows[$r][$c]
             $tInv.Cell($r + 2, $c + 1).Range.Font.Size = 8
         }
@@ -725,9 +725,11 @@ try {
     Write-Host "     1. $DocPath1" -ForegroundColor Green
     Write-Host "     2. $DocPath2" -ForegroundColor Green
 
-} catch {
+}
+catch {
     Write-Host "[ERROR] Ocurrió una excepción al generar el documento Word: $_" -ForegroundColor Red
-} finally {
+}
+finally {
     if ($Doc) { $Doc.Close([ref]$false) }
     if ($Word) { $Word.Quit() }
     [System.Runtime.Interopservices.Marshal]::ReleaseComObject($Word) | Out-Null
